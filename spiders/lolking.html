@@ -1,0 +1,1847 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="description" content="Create &amp; discover new Champion builds/strategies, check your Summoner statistics and try our powerful LoL charts." />
+        <meta name="keywords" content="league of legends,lol,champion guides,champion strategy,champion builds,guides,builds,summoner stats,lol summoners,top summoners,best champions" />
+    <title>Charts &amp; Statistics - League of Legends</title>
+
+    <meta charset="utf-8">
+    
+    <!-- Source from LK -->
+    <script>
+        window.LOLKING = window.LOLKING || {};
+        LOLKING.regions = {"na":"North America","euw":"Europe West","eune":"Europe Nordic &amp; East","br":"Brazil","tr":"Turkey","ru":"Russia","lan":"Latin America North","las":"Latin America South","oce":"Oceania","kr":"Korea"};
+        LOLKING.champions = {"aatrox":{"name":"Aatrox","file":"aatrox","champion_id":266,"internal_name":"aatrox"},"ahri":{"name":"Ahri","file":"ahri","champion_id":103,"internal_name":"ahri"},"akali":{"name":"Akali","file":"akali","champion_id":84,"internal_name":"akali"},"alistar":{"name":"Alistar","file":"alistar","champion_id":12,"internal_name":"alistar"},"amumu":{"name":"Amumu","file":"amumu","champion_id":32,"internal_name":"amumu"},"anivia":{"name":"Anivia","file":"anivia","champion_id":34,"internal_name":"anivia"},"annie":{"name":"Annie","file":"annie","champion_id":1,"internal_name":"annie"},"ashe":{"name":"Ashe","file":"ashe","champion_id":22,"internal_name":"ashe"},"aurelionsol":{"name":"Aurelion Sol","file":"aurelionsol","champion_id":136,"internal_name":"aurelionsol"},"azir":{"name":"Azir","file":"azir","champion_id":268,"internal_name":"azir"},"bard":{"name":"Bard","file":"bard","champion_id":432,"internal_name":"bard"},"blitzcrank":{"name":"Blitzcrank","file":"blitzcrank","champion_id":53,"internal_name":"blitzcrank"},"brand":{"name":"Brand","file":"brand","champion_id":63,"internal_name":"brand"},"braum":{"name":"Braum","file":"braum","champion_id":201,"internal_name":"braum"},"caitlyn":{"name":"Caitlyn","file":"caitlyn","champion_id":51,"internal_name":"caitlyn"},"cassiopeia":{"name":"Cassiopeia","file":"cassiopeia","champion_id":69,"internal_name":"cassiopeia"},"chogath":{"name":"Cho'Gath","file":"chogath","champion_id":31,"internal_name":"chogath"},"corki":{"name":"Corki","file":"corki","champion_id":42,"internal_name":"corki"},"darius":{"name":"Darius","file":"darius","champion_id":122,"internal_name":"darius"},"diana":{"name":"Diana","file":"diana","champion_id":131,"internal_name":"diana"},"drmundo":{"name":"Dr. Mundo","file":"drmundo","champion_id":36,"internal_name":"drmundo"},"draven":{"name":"Draven","file":"draven","champion_id":119,"internal_name":"draven"},"ekko":{"name":"Ekko","file":"ekko","champion_id":245,"internal_name":"ekko"},"elise":{"name":"Elise","file":"elise","champion_id":60,"internal_name":"elise"},"evelynn":{"name":"Evelynn","file":"evelynn","champion_id":28,"internal_name":"evelynn"},"ezreal":{"name":"Ezreal","file":"ezreal","champion_id":81,"internal_name":"ezreal"},"fiddlesticks":{"name":"Fiddlesticks","file":"fiddlesticks","champion_id":9,"internal_name":"fiddlesticks"},"fiora":{"name":"Fiora","file":"fiora","champion_id":114,"internal_name":"fiora"},"fizz":{"name":"Fizz","file":"fizz","champion_id":105,"internal_name":"fizz"},"galio":{"name":"Galio","file":"galio","champion_id":3,"internal_name":"galio"},"gangplank":{"name":"Gangplank","file":"gangplank","champion_id":41,"internal_name":"gangplank"},"garen":{"name":"Garen","file":"garen","champion_id":86,"internal_name":"garen"},"gnar":{"name":"Gnar","file":"gnar","champion_id":150,"internal_name":"gnar"},"gragas":{"name":"Gragas","file":"gragas","champion_id":79,"internal_name":"gragas"},"graves":{"name":"Graves","file":"graves","champion_id":104,"internal_name":"graves"},"hecarim":{"name":"Hecarim","file":"hecarim","champion_id":120,"internal_name":"hecarim"},"heimerdinger":{"name":"Heimerdinger","file":"heimerdinger","champion_id":74,"internal_name":"heimerdinger"},"illaoi":{"name":"Illaoi","file":"illaoi","champion_id":420,"internal_name":"illaoi"},"irelia":{"name":"Irelia","file":"irelia","champion_id":39,"internal_name":"irelia"},"ivern":{"name":"Ivern","file":"ivern","champion_id":427,"internal_name":"ivern"},"janna":{"name":"Janna","file":"janna","champion_id":40,"internal_name":"janna"},"jarvaniv":{"name":"Jarvan IV","file":"jarvaniv","champion_id":59,"internal_name":"jarvaniv"},"jax":{"name":"Jax","file":"jax","champion_id":24,"internal_name":"jax"},"jayce":{"name":"Jayce","file":"jayce","champion_id":126,"internal_name":"jayce"},"jhin":{"name":"Jhin","file":"jhin","champion_id":202,"internal_name":"jhin"},"jinx":{"name":"Jinx","file":"jinx","champion_id":222,"internal_name":"jinx"},"kalista":{"name":"Kalista","file":"kalista","champion_id":429,"internal_name":"kalista"},"karma":{"name":"Karma","file":"karma","champion_id":43,"internal_name":"karma"},"karthus":{"name":"Karthus","file":"karthus","champion_id":30,"internal_name":"karthus"},"kassadin":{"name":"Kassadin","file":"kassadin","champion_id":38,"internal_name":"kassadin"},"katarina":{"name":"Katarina","file":"katarina","champion_id":55,"internal_name":"katarina"},"kayle":{"name":"Kayle","file":"kayle","champion_id":10,"internal_name":"kayle"},"kennen":{"name":"Kennen","file":"kennen","champion_id":85,"internal_name":"kennen"},"khazix":{"name":"Kha'Zix","file":"khazix","champion_id":121,"internal_name":"khazix"},"kindred":{"name":"Kindred","file":"kindred","champion_id":203,"internal_name":"kindred"},"kled":{"name":"Kled","file":"kled","champion_id":240,"internal_name":"kled"},"kogmaw":{"name":"Kog'Maw","file":"kogmaw","champion_id":96,"internal_name":"kogmaw"},"leblanc":{"name":"LeBlanc","file":"leblanc","champion_id":7,"internal_name":"leblanc"},"leesin":{"name":"Lee Sin","file":"leesin","champion_id":64,"internal_name":"leesin"},"leona":{"name":"Leona","file":"leona","champion_id":89,"internal_name":"leona"},"lissandra":{"name":"Lissandra","file":"lissandra","champion_id":127,"internal_name":"lissandra"},"lucian":{"name":"Lucian","file":"lucian","champion_id":236,"internal_name":"lucian"},"lulu":{"name":"Lulu","file":"lulu","champion_id":117,"internal_name":"lulu"},"lux":{"name":"Lux","file":"lux","champion_id":99,"internal_name":"lux"},"malphite":{"name":"Malphite","file":"malphite","champion_id":54,"internal_name":"malphite"},"malzahar":{"name":"Malzahar","file":"malzahar","champion_id":90,"internal_name":"malzahar"},"maokai":{"name":"Maokai","file":"maokai","champion_id":57,"internal_name":"maokai"},"masteryi":{"name":"Master Yi","file":"masteryi","champion_id":11,"internal_name":"masteryi"},"missfortune":{"name":"Miss Fortune","file":"missfortune","champion_id":21,"internal_name":"missfortune"},"mordekaiser":{"name":"Mordekaiser","file":"mordekaiser","champion_id":82,"internal_name":"mordekaiser"},"morgana":{"name":"Morgana","file":"morgana","champion_id":25,"internal_name":"morgana"},"nami":{"name":"Nami","file":"nami","champion_id":267,"internal_name":"nami"},"nasus":{"name":"Nasus","file":"nasus","champion_id":75,"internal_name":"nasus"},"nautilus":{"name":"Nautilus","file":"nautilus","champion_id":111,"internal_name":"nautilus"},"nidalee":{"name":"Nidalee","file":"nidalee","champion_id":76,"internal_name":"nidalee"},"nocturne":{"name":"Nocturne","file":"nocturne","champion_id":56,"internal_name":"nocturne"},"nunu":{"name":"Nunu","file":"nunu","champion_id":20,"internal_name":"nunu"},"olaf":{"name":"Olaf","file":"olaf","champion_id":2,"internal_name":"olaf"},"orianna":{"name":"Orianna","file":"orianna","champion_id":61,"internal_name":"orianna"},"pantheon":{"name":"Pantheon","file":"pantheon","champion_id":80,"internal_name":"pantheon"},"poppy":{"name":"Poppy","file":"poppy","champion_id":78,"internal_name":"poppy"},"quinn":{"name":"Quinn","file":"quinn","champion_id":133,"internal_name":"quinn"},"rammus":{"name":"Rammus","file":"rammus","champion_id":33,"internal_name":"rammus"},"reksai":{"name":"Rek'Sai","file":"reksai","champion_id":421,"internal_name":"reksai"},"renekton":{"name":"Renekton","file":"renekton","champion_id":58,"internal_name":"renekton"},"rengar":{"name":"Rengar","file":"rengar","champion_id":107,"internal_name":"rengar"},"riven":{"name":"Riven","file":"riven","champion_id":92,"internal_name":"riven"},"rumble":{"name":"Rumble","file":"rumble","champion_id":68,"internal_name":"rumble"},"ryze":{"name":"Ryze","file":"ryze","champion_id":13,"internal_name":"ryze"},"sejuani":{"name":"Sejuani","file":"sejuani","champion_id":113,"internal_name":"sejuani"},"shaco":{"name":"Shaco","file":"shaco","champion_id":35,"internal_name":"shaco"},"shen":{"name":"Shen","file":"shen","champion_id":98,"internal_name":"shen"},"shyvana":{"name":"Shyvana","file":"shyvana","champion_id":102,"internal_name":"shyvana"},"singed":{"name":"Singed","file":"singed","champion_id":27,"internal_name":"singed"},"sion":{"name":"Sion","file":"sion","champion_id":14,"internal_name":"sion"},"sivir":{"name":"Sivir","file":"sivir","champion_id":15,"internal_name":"sivir"},"skarner":{"name":"Skarner","file":"skarner","champion_id":72,"internal_name":"skarner"},"sona":{"name":"Sona","file":"sona","champion_id":37,"internal_name":"sona"},"soraka":{"name":"Soraka","file":"soraka","champion_id":16,"internal_name":"soraka"},"swain":{"name":"Swain","file":"swain","champion_id":50,"internal_name":"swain"},"syndra":{"name":"Syndra","file":"syndra","champion_id":134,"internal_name":"syndra"},"tahmkench":{"name":"Tahm Kench","file":"tahmkench","champion_id":223,"internal_name":"tahmkench"},"taliyah":{"name":"Taliyah","file":"taliyah","champion_id":163,"internal_name":"taliyah"},"talon":{"name":"Talon","file":"talon","champion_id":91,"internal_name":"talon"},"taric":{"name":"Taric","file":"taric","champion_id":44,"internal_name":"taric"},"teemo":{"name":"Teemo","file":"teemo","champion_id":17,"internal_name":"teemo"},"thresh":{"name":"Thresh","file":"thresh","champion_id":412,"internal_name":"thresh"},"tristana":{"name":"Tristana","file":"tristana","champion_id":18,"internal_name":"tristana"},"trundle":{"name":"Trundle","file":"trundle","champion_id":48,"internal_name":"trundle"},"tryndamere":{"name":"Tryndamere","file":"tryndamere","champion_id":23,"internal_name":"tryndamere"},"twistedfate":{"name":"Twisted Fate","file":"twistedfate","champion_id":4,"internal_name":"twistedfate"},"twitch":{"name":"Twitch","file":"twitch","champion_id":29,"internal_name":"twitch"},"udyr":{"name":"Udyr","file":"udyr","champion_id":77,"internal_name":"udyr"},"urgot":{"name":"Urgot","file":"urgot","champion_id":6,"internal_name":"urgot"},"varus":{"name":"Varus","file":"varus","champion_id":110,"internal_name":"varus"},"vayne":{"name":"Vayne","file":"vayne","champion_id":67,"internal_name":"vayne"},"veigar":{"name":"Veigar","file":"veigar","champion_id":45,"internal_name":"veigar"},"velkoz":{"name":"Vel'Koz","file":"velkoz","champion_id":161,"internal_name":"velkoz"},"vi":{"name":"Vi","file":"vi","champion_id":254,"internal_name":"vi"},"viktor":{"name":"Viktor","file":"viktor","champion_id":112,"internal_name":"viktor"},"vladimir":{"name":"Vladimir","file":"vladimir","champion_id":8,"internal_name":"vladimir"},"volibear":{"name":"Volibear","file":"volibear","champion_id":106,"internal_name":"volibear"},"warwick":{"name":"Warwick","file":"warwick","champion_id":19,"internal_name":"warwick"},"monkeyking":{"name":"Wukong","file":"monkeyking","champion_id":62,"internal_name":"wukong"},"xerath":{"name":"Xerath","file":"xerath","champion_id":101,"internal_name":"xerath"},"xinzhao":{"name":"Xin Zhao","file":"xinzhao","champion_id":5,"internal_name":"xinzhao"},"yasuo":{"name":"Yasuo","file":"yasuo","champion_id":157,"internal_name":"yasuo"},"yorick":{"name":"Yorick","file":"yorick","champion_id":83,"internal_name":"yorick"},"zac":{"name":"Zac","file":"zac","champion_id":154,"internal_name":"zac"},"zed":{"name":"Zed","file":"zed","champion_id":238,"internal_name":"zed"},"ziggs":{"name":"Ziggs","file":"ziggs","champion_id":115,"internal_name":"ziggs"},"zilean":{"name":"Zilean","file":"zilean","champion_id":26,"internal_name":"zilean"},"zyra":{"name":"Zyra","file":"zyra","champion_id":143,"internal_name":"zyra"}};
+        LOLKING.config = {cacheBuster : "e5e188065982f72200e3afdafb3a86f7cfa4017a"};
+        LOLKING.currentUser = { handle: null };
+
+    </script>
+
+    <script id="ad-provider-MonkeyBroker" src="//d3pkae9owd2lcf.cloudfront.net/mb105.gz.js"></script>
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-28095441-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    <!-- End of Google Analytics -->
+    <!-- MonkeyBroker -->
+    <script type="text/javascript">
+        function getMBChannel(){
+            if (/zaftest/.test(window.location.href)) {
+                return 'LolkingTest';
+            }
+
+            var channel = 'LolkingOther';
+            var uri = window.location.pathname;
+            if (uri.indexOf('/models') == 0) channel = 'LolkingModel';
+            else if (uri.indexOf('/summoner') == 0) channel = 'LolkingSummoner';
+            else if (uri.indexOf('/champions') == 0) channel = 'LolkingChampion';
+            else if (uri.indexOf('/search') == 0) channel = 'LolkingSearch';
+            else if (uri.indexOf('/charts') == 0) channel = 'LolkingChart';
+            else if (uri.indexOf('/streams') == 0) channel = 'LolkingStream';
+            else if (uri.indexOf('/guides') == 0) channel = 'LolkingGuides';
+            else if (uri == '/') channel = 'LolkingHome';
+            return channel;
+        };
+
+        if (typeof MonkeyBroker !== "undefined") {
+            var handledSkin = false;
+            if (typeof(I10C) !== "undefined" && I10C.Morph == 1) {
+                MonkeyBroker.site = {"id": 1830,
+                                     "customDomainName": 'mb.zam.com',
+                                     "reportBadAd": true,
+                                     "reportBadAdText": "Report Ad",
+                                     "lightboxCallback": function (e, t) {
+                                        var iframeAdReport = document.createElement("iframe");
+                                        iframeAdReport.src = e;
+                                        iframeAdReport.height = 0;
+                                        iframeAdReport.width = 0;
+                                        document.getElementsByTagName("body")[0].appendChild(iframeAdReport);
+
+                                        t.parentNode.removeChild(t);
+
+                                        alert("Thank you for your feedback, we will look into it!");
+                                    }
+                                };
+            } else {
+                MonkeyBroker.site = {"id": 1677,
+                                     "customDomainName": 'mb.zam.com',
+                                     "reportBadAd": true,
+                                     "reportBadAdText": "Report Ad",
+                                     "lightboxCallback": function (e, t) {
+                                        var iframeAdReport = document.createElement("iframe");
+                                        iframeAdReport.src = e;
+                                        iframeAdReport.height = 0;
+                                        iframeAdReport.width = 0;
+                                        document.getElementsByTagName("body")[0].appendChild(iframeAdReport);
+
+                                        t.parentNode.removeChild(t);
+
+                                        alert("Thank you for your feedback, we will look into it!");
+                                    }
+                                };
+            }
+            MonkeyBroker.addAttribute("mb_pc", getMBChannel());
+            MonkeyBroker.addAttribute("mb_ri", 90);
+            //Will change to be multi-sized
+            MonkeyBroker.addSlot({slot:'horizontal-atf', sizes:["728x90","970x90","970x250"]});
+            MonkeyBroker.addSlot({slot:'horizontal-btf', sizes:[22]});
+
+            MonkeyBroker.addSlot({slot:'vertical-atf',sizes:["300x600","300x250","160x600","Stacked 300x250"]});
+            MonkeyBroker.addSlot({slot:'vertical-btf',sizes:[39,26,40,"Stacked 300x250"]});
+
+            MonkeyBroker.addSlot({slot:'skin', sizes:[30], dataTag:true});
+            MonkeyBroker.addSlot({slot:'header-tko', sizes:[41], rm:true});
+
+            MonkeyBroker.registerSlotCallback('horizontal-atf', function(ad){
+                var adWidth = parseInt(ad.w);
+                var adHeight = parseInt(ad.h);
+                $('body').removeClass('has-adblocker');
+                $('body').removeClass('has-970x90');
+                $('body').removeClass('has-970x250');
+                $('body').removeClass('has-728x90');
+
+                if (adWidth === 970) {
+                    $('body').toggleClass('has-970x90', (adHeight === 90));
+                    $('body').toggleClass('has-970x250', (adHeight === 250));
+                }
+                if (adWidth === 728) {
+                    $('body').toggleClass('has-728x90', (adHeight === 90));
+                }
+            });
+
+            MonkeyBroker.registerSizeCallback(30, function(skin){
+                if (!handledSkin) {
+                    handledSkin = true;
+
+                    // Start original ZAF stuff
+                    var target = document.getElementById('skin-wrap');
+                    if (target) {
+                        target.innerHTML = '';
+                    } else {
+                        target = document.body;
+                    }
+
+                    // Add class to the body to show the page is skinned
+                    document.body.className += ' skinned' +(skin.usePageLeaderboard ? ' ' + 'skinned-use-page-leaderboard' : '');
+
+                    // Add links
+                    var linkClassPrefix = 'skin-link-';
+                    var i = 0;
+                    var skinLinkCount = 1;
+                    while (i++ < skinLinkCount) {
+                        var a = target.insertBefore(
+                                document.createElement('a'),
+                                target.firstChild
+                        );
+                        a.className = linkClassPrefix + i;
+                        a.target = '_blank';
+                        a.href = skin.link;
+                        a.style.backgroundImage = 'url(' + skin.image + ')';
+                    }
+
+                    // Add client tracking pixel(s) if there are any
+                    var addImpressionTracker = function(target, url) {
+                        var img = target.insertBefore(
+                                document.createElement('img'),
+                                target.firstChild
+                        );
+                        img.className = 'skin-pixel';
+                        img.src = url;
+                    };
+                    switch (typeof skin.impressionTracking) {
+                        case 'string':
+                            addImpressionTracker(target, skin.impressionTracking);
+                            break;
+                        case 'object':
+                            for (var j in skin.impressionTracking) {
+                                if (skin.impressionTracking.hasOwnProperty(j) && typeof skin.impressionTracking[j] == 'string') {
+                                    addImpressionTracker(target, skin.impressionTracking[j]);
+                                }
+                            }
+                            break;
+                    }
+
+                    if (skin.includeLeaderboard) {
+                        skin.superLeaderboard = skin.includeLeaderboard;
+                    }
+
+                    if (skin.superLeaderboard) {
+                        var superLeaderboardHeight = skin.superLeaderboardHeight || '90';
+                        var superLeaderboardWidth = skin.superLeaderboardWidth || '970';
+
+                        var iframeDiv = target.insertBefore(
+                                document.createElement('div'),
+                                target.firstChild
+                        );
+                        iframeDiv.className = 'skin-' + superLeaderboardWidth + 'x' + superLeaderboardHeight;
+
+                        var iframe = document.createElement('iframe');
+                        iframe.src = skin.superLeaderboard;
+
+                        // All the crazy attributes needed for iframes with ads to behave
+                        iframe.marginWidth = iframe.marginHeight = iframe.hspace = iframe.vspace = iframe.frameBorder = iframe.frameborder = iframe.border = 0;
+                        iframe.style.height = superLeaderboardHeight + 'px';
+                        iframe.style.width = superLeaderboardWidth + 'px';
+                        iframe.scrolling = 'no';
+
+                        iframeDiv.appendChild(iframe);
+                    }
+                    //-- End original ZAF stuff
+
+                    if (skin.usePageLeaderboard) {
+                        var detachedUnit = $('.subpage-ad-header').detach();
+                        var skinWrap = $('#skin-wrap');
+
+                        detachedUnit.addClass('skin-970x250').appendTo(skinWrap);
+                    } else {
+                        $('.subpage-ad-header').hide();
+                        $('body').removeClass('has-970x90').removeClass('has-970x250');
+
+                        setTimeout(function() {
+                            $('.subpage-ad-header').remove();
+                        }, 3000);
+                    }
+                }
+            });
+
+            MonkeyBroker.go();
+        }
+    </script>
+    <!-- End of MonkeyBroker -->
+    <link rel="shortcut icon" href="//lkstatic.zamimg.com/favicon.ico" />
+
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Marmelad|Kreon|Oswald:200,300,400,500,600,700,800" />
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'/>
+    <link href='//fonts.googleapis.com/css?family=Roboto+Slab:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'/>
+
+
+    <script src="//cdn.zamimg.com/zul/2.0.x/zul.min.js"></script>
+
+                <script type="text/javascript" src="/asset-manager-cache/js/5a15c95.js?1475782227"></script>
+    
+            <script type="text/javascript" src="/asset-manager-cache/js/79044d1.js?1475782227"></script>
+        
+        <link href="/asset-manager-cache/css/required.min.css?1475782227" type="text/css" rel="stylesheet" />
+    
+            <link href="/asset-manager-cache/css/41a93cd.css?1475782227" type="text/css" rel="stylesheet" />
+                <link href="/asset-manager-cache/css/site.min.css?1475782227" type="text/css" rel="stylesheet" />
+    
+        <link href="/asset-manager-cache/fonts/site.min.css?1475782227" type="text/css" rel="stylesheet" />
+        
+        <script>
+    
+    //ZUL.init({ state: 'loggedOut' });
+
+    
+    $(function(){
+        (function() {
+    var $zbss = $('.zul-bar-user-item-server-status');
+    var h = $zbss.outerHeight();
+    var $d = $('<div></div>').css('top', h + 'px');
+
+    $zbss
+        .append($d)
+        .on('mouseover', function(){ $zbss.children('div').show(); })
+        .on('mouseout', function(){ $zbss.children('div').hide(); });
+
+            $d.append('<div class="server-status-online">Online: NA EUW EUNE BR TR RU LAN LAS OCE</div>');
+        })();            });
+    </script>
+    
+    <style>
+        #notification-shim {
+            display: none;
+            background: #000;
+            z-index: 9000;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            opacity: 0.7;
+        }
+
+        #notification {
+            display: none;
+            padding: 10px;
+            z-index: 99999;
+            text-align: center;
+            max-width: 500px;
+            min-width: 300px;
+        }
+
+        #notification-content {
+            background: #1A1A1A;
+            padding: 10px;
+            border-radius: 6px;
+            box-shadow: 0 0 2px #000 inset;
+        }
+
+        #notification-buttonbar {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+    </style>
+
+    <script>
+
+        jQuery.fn.center = function () {
+            this.css("position","absolute");
+            this.css("top", Math.max(0, (($(window).height() - this.outerHeight()) / 2) + $(window).scrollTop()) + "px");
+            this.css("left", Math.max(0, (($(window).width() - this.outerWidth()) / 2) + $(window).scrollLeft()) + "px");
+            return this;
+        }
+
+
+        window.alert = function(msg) {
+
+            $(document).bind('keypress.alert', function(e){
+                if(e.which == 13) {
+                    $('#notification-shim').click();
+                    return false;
+                }
+            });
+
+            $('#notification-shim, #notification').remove();
+            $('body').append('<div id="notification-shim" style=""></div>');
+            $('body').append([
+                '<div class="pane" id="notification">',
+                    '<div id="notification-content">',
+                        msg,
+                        '<div id="notification-buttonbar">',
+                            '<button class="blue" onclick="$(\'#notification-shim\').click();">Close</button>',
+                        '</div>',
+                    '</div>',
+                '</div>'
+            ].join(''));
+
+            $('#notification').center();
+            $('#notification-shim').show();
+            $('#notification').fadeIn(500);
+
+            $('#notification-shim').click(function(){
+
+                $(document).unbind('keypress.alert');
+                $('#notification-shim, #notification').remove();
+
+            });
+
+        }
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <style>
+        .header-box iframe {height:90px;width:728px}
+        .block-box iframe {height:250px;width:300px}
+        .sidebar-box iframe {height:600px;width:160px}
+    </style>
+
+    <script src="//pagead2.googlesyndication.com/pagead/js/google_top_exp.js"></script>
+
+    
+        <script>
+            window.cookieconsent_options = {
+                theme: 'dark-bottom',
+                markup: [
+                    '<div class="cc_banner-wrapper {{containerClasses}}">',
+                        '<div class="cc_banner cc_container cc_container--open" style="border-top:1px solid #111;">',
+                            '<a href="#null" data-cc-event="click:dismiss" target="_blank" class="cc_btn cc_btn_accept_all">{{options.dismiss}}</a>',
+                            '<p class="cc_message" style="margin:0 !important;font-size:0.8em !important;line-height:20px;color:#aaa;">We may use cookies to personalize content and ads, to provide social media features and to analyze our site traffic. We may also share information about your use of our site with our social media, advertising and analytics partners. For more information, visit our <a href="http://zam.com/terms.html" class="cc_more_info" target="{{ options.target }}">Terms of Service</a> and the <a href="http://zam.com/privacy.html" class="cc_more_info" target="{{ options.target }}">Privacy Policy</a>.</p>',
+                        '</div>',
+                    '</div>'
+                ]
+            };
+        </script>
+    
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+
+    <!-- END LK Source -->
+
+    </head>
+
+<body>
+    <div id="skin-wrap">
+        <script>
+            if (typeof MonkeyBroker != "undefined") {
+                MonkeyBroker.fillSlot("skin");
+            }
+        </script>
+    </div>
+    <div id="za-fixedFooter"></div>
+
+    <!-- start: facebook -->
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=225666384117395";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!-- end: facebook -->
+
+    <noscript>
+        <div id="noscript-bg"></div>
+        <div id="noscript-text">
+            <div id="noscript-text-img"></div>
+            <b>This site makes extensive use of JavaScript.</b><br />Please <a href="https://www.google.com/support/adsense/bin/answer.py?answer=12654" target="_blank">enable JavaScript</a> in your browser.
+        </div>
+    </noscript>
+
+    <header>
+        <div class="header-main">
+            <div class="container">
+                <div class="header-brand">
+                    <a href="/" class="header-logo-icon"></a>
+                    <a href="/" class="header-logo-text"></a>
+                </div>
+                <div class="header-search">
+                    <div class="header-user-area">
+                                                    <a href="/account/login">Login</a> <span class="header-user-pipe">|</span> <a href="/account/register">Register</a>
+                                                                                                <a href="javascript:;" class="header-status header-status-online ">
+                            <span class="fa fa-desktop"></span>
+                        </a>
+                        <div class="header-status-list">
+                            <h3>Server Status</h3>
+                                                                                                <div class="header-status-online"><span class="fa fa-check-circle"></span> North America</div>
+                                                                    <div class="header-status-online"><span class="fa fa-check-circle"></span> Europe West</div>
+                                                                    <div class="header-status-online"><span class="fa fa-check-circle"></span> Europe Nordic &amp; East</div>
+                                                                    <div class="header-status-online"><span class="fa fa-check-circle"></span> Brazil</div>
+                                                                    <div class="header-status-online"><span class="fa fa-check-circle"></span> Turkey</div>
+                                                                    <div class="header-status-online"><span class="fa fa-check-circle"></span> Russia</div>
+                                                                    <div class="header-status-online"><span class="fa fa-check-circle"></span> Latin America North</div>
+                                                                    <div class="header-status-online"><span class="fa fa-check-circle"></span> Latin America South</div>
+                                                                    <div class="header-status-online"><span class="fa fa-check-circle"></span> Oceania</div>
+                                                                                                                </div>
+                        <script>
+                            $(function() {
+                                var bodyElem = $('body');
+                                var headerStatusElem = $('.header-status');
+                                var headerStatusList = $('.header-status-list');
+                                var headerFavoritesElem = $('.header-favorites');
+                                var headerFavoritesList = $('.header-favorites-list');
+
+                                headerStatusElem.on('mouseenter', function() {
+                                    headerStatusList.show();
+                                }).on('mouseleave', function() {
+                                    headerStatusList.hide();
+                                });
+
+                                headerFavoritesElem.on('click', function(e) {
+                                    if (headerFavoritesList.is(':visible')) {
+                                        headerFavoritesElem.find('.fa').attr('fa fa-caret-down');
+                                        headerFavoritesList.hide();
+                                    } else {
+                                        headerFavoritesElem.find('.fa').attr('fa fa-caret-up');
+                                        headerFavoritesList.show();
+                                    }
+
+                                    e.stopPropagation();
+                                });
+
+                                bodyElem.on('click', function(e) {
+                                    var targetElem = $(e.target);
+                                    if (targetElem.parents().andSelf().is('.header-favorites-list')) {
+                                        return;
+                                    }
+
+                                    headerFavoritesElem.find('.fa').attr('fa fa-caret-down');
+                                    headerFavoritesList.hide();
+                                });
+                            });
+                        </script>
+                    </div>
+                    <div class="suggestive-search-container">
+                        <form action="/search" method="get">
+                            <input autofocus="autofocus" type="text" name="name" autocomplete="off" value="" tabindex="0">
+                            <div class="tselect-container">
+                                <input type="hidden" name="region" value="NA">
+                                <ul class="tester">
+                                    <li style="display: list-item;">NA</li>
+                                                                            <li data-tselect-selected-label="ALL" data-tselect-value="ALL" style="display: none;">All Regions</li>
+                                                                            <li data-tselect-selected-label="NA" data-tselect-value="NA" style="display: none;">North America</li>
+                                                                            <li data-tselect-selected-label="EUW" data-tselect-value="EUW" style="display: none;">Europe West</li>
+                                                                            <li data-tselect-selected-label="EUNE" data-tselect-value="EUNE" style="display: none;">Europe Nordic &amp; East</li>
+                                                                            <li data-tselect-selected-label="BR" data-tselect-value="BR" style="display: none;">Brazil</li>
+                                                                            <li data-tselect-selected-label="KR" data-tselect-value="KR" style="display: none;">Korea</li>
+                                                                    </ul>
+                            </div>
+                            <button><span class="fa fa-search"></span></button>
+                        </form>
+
+                        <ul class="search-suggestions-container" style="display: none;"></ul>
+                        <img id="clickthrough select-your-region-callout" style="display: none; position: absolute; right: 118px; top: 100%; margin-top: -2px;" src="/images/select-your-region.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-navigation">
+            <div class="container">
+                <div class="header-brand">
+                    <a href="/" class="header-logo-icon"></a>
+                    <a href="/" class="header-logo-text"></a>
+                </div>
+                <ul>
+                    <li><a href="/guides" data-tab="guides">Champion Guides</a></li>
+                    <li><a href="/charts" data-tab="charts">Charts</a></li>
+                    <li><a href="/champions" data-tab="champions">Champions</a></li>
+                    <li><a href="/models" data-tab="models">3D Models</a></li>
+                    <li><a href="/leaderboards" data-tab="leaderboards">Leaderboards</a></li>
+                    <li><a href="/replays">Replays</a></li>
+                    <li><a href="/streams" data-tab="streams">Streams</a></li>
+                </ul>
+                <ul class="header-social">
+                    <li class="social-facebook"><a href="https://www.facebook.com/Lolking"><span class="fa fa-facebook"></span></a></li>
+                    <li class="social-twitter"><a href="https://twitter.com/LolKing"><span class="fa fa-twitter"></span></a></li>
+                    <li class="social-youtube"><a href="https://www.youtube.com/user/LolKingNet"><span class="fa fa-youtube-play"></span></a></li>
+                </ul>
+            </div>
+            <div class="header-floating-nav">
+                <!-- 10/07/2016 20:49:27 -->
+<div class="header-nav-tab header-tab-guides">
+    <div class="container">
+        <div class="row">
+            <div class="header-nav-20">
+                <div class="header-tab-title">Champion Guides:</div>
+                <ul>
+                    <li class="header-tab-primary"><a href="/guides">All Guides</a></li>
+                    <li><a href="/guides/list?sort=views">Popular</a></li>
+                    <li><a href="/guides/list?sort=date_created">New</a></li>
+                    <li><a href="/guides/list?sort=ratings">Highly Rated</a></li>
+                    <li><a href="/guides/list?sort=date_modified">Updated</a></li>
+                    <li class="header-tab-gap"></li>
+                    <li class="header-tab-primary"><a href="/guides/new">Create a Guide</a></li>
+                </ul>
+                <script>
+                    $(function() {
+                        var guidesTab = $('.header-tab-guides');
+                        var guidesList = guidesTab.find('ul');
+
+                        if (LOLKING.currentUser.handle) {
+                            guidesList.append('<li class="header-tab-gap"></li>');
+                            guidesList.append('<li class="header-tab-primary"><a href="/guides/list?author=' + LOLKING.currentUser.handle + '">My Guides</a></li>');
+                        }
+                    });
+                </script>
+            </div>
+            <div class="header-tab-container header-nav-80">
+                <div class="row">
+                                            <div class="header-nav-25">
+                            <a href="/guides/351816" class="header-guides-guide">
+                                <span class="header-guide-image" style="background-image:url('/images/v2/champions/skins/size199x362/92_0.jpg');"></span>
+                                <span class="header-guide-name">
+                                    <span>Riven</span>
+                                    <span class="header-guide-stats">
+                                        <span class="header-guide-stat">
+                                            <em><span class="fa fa-thumbs-up"></span></em>
+                                            <strong>430</strong>
+                                        </span>
+                                        <span class="header-guide-stat">
+                                            <em><span class="fa fa-eye"></span></em>
+                                            <strong>1.54M</strong>
+                                        </span>
+                                    </span>
+                                </span>
+                                <span class="header-guide-desc">Path to Redemption (In depth guide on Riven Top/Mid and Laning 6.19)</span>
+                            </a>
+                        </div>
+                                            <div class="header-nav-25">
+                            <a href="/guides/261441" class="header-guides-guide">
+                                <span class="header-guide-image" style="background-image:url('/images/v2/champions/skins/size199x362/39_0.jpg');"></span>
+                                <span class="header-guide-name">
+                                    <span>Irelia</span>
+                                    <span class="header-guide-stats">
+                                        <span class="header-guide-stat">
+                                            <em><span class="fa fa-thumbs-up"></span></em>
+                                            <strong>2.6K</strong>
+                                        </span>
+                                        <span class="header-guide-stat">
+                                            <em><span class="fa fa-eye"></span></em>
+                                            <strong>13.65M</strong>
+                                        </span>
+                                    </span>
+                                </span>
+                                <span class="header-guide-desc">Season 6 Irelia Guide by Irelia Carries U (Challenger s4/s5)</span>
+                            </a>
+                        </div>
+                                            <div class="header-nav-25">
+                            <a href="/guides/372426" class="header-guides-guide">
+                                <span class="header-guide-image" style="background-image:url('/images/v2/champions/skins/size199x362/98_0.jpg');"></span>
+                                <span class="header-guide-name">
+                                    <span>Shen</span>
+                                    <span class="header-guide-stats">
+                                        <span class="header-guide-stat">
+                                            <em><span class="fa fa-thumbs-up"></span></em>
+                                            <strong>261</strong>
+                                        </span>
+                                        <span class="header-guide-stat">
+                                            <em><span class="fa fa-eye"></span></em>
+                                            <strong>1.25M</strong>
+                                        </span>
+                                    </span>
+                                </span>
+                                <span class="header-guide-desc">No One Hides From The Twilight&#039;s Eye (In depth guide on Reworked Shen)</span>
+                            </a>
+                        </div>
+                                            <div class="header-nav-25">
+                            <a href="/guides/305920" class="header-guides-guide">
+                                <span class="header-guide-image" style="background-image:url('/images/v2/champions/skins/size199x362/112_0.jpg');"></span>
+                                <span class="header-guide-name">
+                                    <span>Viktor</span>
+                                    <span class="header-guide-stats">
+                                        <span class="header-guide-stat">
+                                            <em><span class="fa fa-thumbs-up"></span></em>
+                                            <strong>1.1K</strong>
+                                        </span>
+                                        <span class="header-guide-stat">
+                                            <em><span class="fa fa-eye"></span></em>
+                                            <strong>3.18M</strong>
+                                        </span>
+                                    </span>
+                                </span>
+                                <span class="header-guide-desc">*Highly Classified* Missing Project Files. Codename: Vengeful Creator. In-Depth Diamond Viktor Guide </span>
+                            </a>
+                        </div>
+                                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="header-nav-tab header-tab-charts">
+    <div class="container">
+        <div class="row">
+            <div class="header-nav-20">
+                <div class="header-tab-title">Charts:</div>
+                <ul>
+                    <li class="header-tab-primary"><a href="/charts">All Charts</a></li>
+                    <li><a href="/charts?region=all&type=champion-popularity&range=weekly&map=sr&queue=1x1&league=ranked">Most Popular</a></li>
+                    <li><a href="/charts?region=all&type=champion-unpopularity&range=weekly&map=sr&queue=1x1&league=ranked">Least Popular</a></li>
+                    <li><a href="/charts?region=all&type=champion-winrate&range=weekly&map=sr&queue=1x1&league=ranked">Highest Win Rate</a></li>
+                    <li><a href="/charts?region=all&type=champion-loserate&range=weekly&map=sr&queue=1x1&league=ranked">Lowest Win Rate</a></li>
+                    <li><a href="/charts?region=all&type=bans&range=weekly&map=sr&queue=1x1&league=ranked">Champion Bans</a></li>
+                    <li><a href="/charts?region=all&type=spell-popularity&range=weekly&map=sr&queue=1x1&league=ranked">Spell Popularity</a></li>
+                    <li><a href="/charts?region=all&type=item-popularity&range=weekly&map=sr&queue=1x1&league=ranked">Item Popularity</a></li>
+                </ul>
+            </div>
+            <div class="header-nav-80">
+                <div class="header-charts-graph">
+                    <div data-lkchart-id="header-chart" class="header-charts-renderable"></div>
+                    <div class="header-charts-info">
+                        <em>Chart</em>
+                        <strong>Champion Bans</strong>
+                        <ul class="header-charts-legend">
+                            <li><span class="fa fa-ban" style="color:#865cae;"></span> 1st Ban</li>
+                            <li><span class="fa fa-ban" style="color:#68ba5f;"></span> 2nd Ban</li>
+                            <li><span class="fa fa-ban" style="color:#af473e;"></span> 3rd Ban</li>
+                            <li><span class="fa fa-ban" style="color:#66babb;"></span> 4th-6th Ban</li>
+                        </ul>
+                    </div>
+                    <script>
+                        LKChart.storeLegacyChart('header-chart', '\x7B\x22template\x22\x3A\x22championBansHeader\x22,\x22groups\x22\x3A\x5B\x7B\x22name\x22\x3A\x22Nidalee\x22,\x22champion_id\x22\x3A\x2276\x22,\x22url\x22\x3A\x22\x5C\x2Fchampions\x5C\x2Fnidalee\x22,\x22values1\x22\x3A\x2218.65,19.03,12.48,27.1\x22\x7D,\x7B\x22name\x22\x3A\x22Graves\x22,\x22champion_id\x22\x3A\x22104\x22,\x22url\x22\x3A\x22\x5C\x2Fchampions\x5C\x2Fgraves\x22,\x22values1\x22\x3A\x228.85,9.84,9.65,24.67\x22\x7D,\x7B\x22name\x22\x3A\x22Syndra\x22,\x22champion_id\x22\x3A\x22134\x22,\x22url\x22\x3A\x22\x5C\x2Fchampions\x5C\x2Fsyndra\x22,\x22values1\x22\x3A\x226.4,5.57,6.33,18.25\x22\x7D,\x7B\x22name\x22\x3A\x22Zac\x22,\x22champion_id\x22\x3A\x22154\x22,\x22url\x22\x3A\x22\x5C\x2Fchampions\x5C\x2Fzac\x22,\x22values1\x22\x3A\x226.53,5.81,5.81,15.91\x22\x7D,\x7B\x22name\x22\x3A\x22Elise\x22,\x22champion_id\x22\x3A\x2260\x22,\x22url\x22\x3A\x22\x5C\x2Fchampions\x5C\x2Felise\x22,\x22values1\x22\x3A\x223.98,4.39,4.81,15.4\x22\x7D,\x7B\x22name\x22\x3A\x22Yasuo\x22,\x22champion_id\x22\x3A\x22157\x22,\x22url\x22\x3A\x22\x5C\x2Fchampions\x5C\x2Fyasuo\x22,\x22values1\x22\x3A\x224.5,4.49,4.74,13.6\x22\x7D,\x7B\x22name\x22\x3A\x22Irelia\x22,\x22champion_id\x22\x3A\x2239\x22,\x22url\x22\x3A\x22\x5C\x2Fchampions\x5C\x2Firelia\x22,\x22values1\x22\x3A\x223.93,3.37,3.56,11.7\x22\x7D,\x7B\x22name\x22\x3A\x22Cassiopeia\x22,\x22champion_id\x22\x3A\x2269\x22,\x22url\x22\x3A\x22\x5C\x2Fchampions\x5C\x2Fcassiopeia\x22,\x22values1\x22\x3A\x223.68,3.46,3.65,10.71\x22\x7D,\x7B\x22name\x22\x3A\x22Jayce\x22,\x22champion_id\x22\x3A\x22126\x22,\x22url\x22\x3A\x22\x5C\x2Fchampions\x5C\x2Fjayce\x22,\x22values1\x22\x3A\x223.1,2.86,3.42,10.81\x22\x7D,\x7B\x22name\x22\x3A\x22Zed\x22,\x22champion_id\x22\x3A\x22238\x22,\x22url\x22\x3A\x22\x5C\x2Fchampions\x5C\x2Fzed\x22,\x22values1\x22\x3A\x223.37,3.14,3.22,10.11\x22,\x22last\x22\x3Atrue\x7D\x5D\x7D');
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="header-nav-tab header-tab-champions">
+    <div class="container">
+        <div class="row">
+            <div class="header-nav-20">
+                <div class="header-tab-title">Champions:</div>
+                <ul>
+                    <li class="header-tab-primary"><a href="/champions">Newest</a></li>
+                                            <li><a href="/champions/ivern" rel="no-tt">Ivern</a></li>
+                                            <li><a href="/champions/kled" rel="no-tt">Kled</a></li>
+                                            <li><a href="/champions/taliyah" rel="no-tt">Taliyah</a></li>
+                                            <li><a href="/champions/aurelionsol" rel="no-tt">Aurelion Sol</a></li>
+                                            <li><a href="/champions/jhin" rel="no-tt">Jhin</a></li>
+                                        <li class="header-tab-gap"></li>
+                    <li class="header-tab-primary"><a href="/champions">All Champions</a></li>
+                    <li class="header-tab-gap"></li>
+                    <li class="header-tab-primary"><a href="/items">All Items</a></li>
+                </ul>
+            </div>
+            <div class="header-tab-container header-nav-80">
+                <div class="row">
+                                                                    <div class="header-nav-33">
+                            <a href="/champions/malzahar" class="header-champions-champion" rel="no-tt">
+                                <span class="header-champion-stats">
+                                    <span class="header-champion-image" style="background-image:url('/images/v2/champions/icons/size100x100/90.png');"></span>
+                                    <span class="header-champion-stat">
+                                        <em><span class="fa fa-heart"></span></em>
+                                        <strong>Popularity</strong>
+                                                                                    <small>5%</small>
+                                                                            </span>
+                                    <span class="header-champion-stat">
+                                        <em><span class="fa fa-trophy"></span></em>
+                                        <strong>Win Rate</strong>
+                                                                                    <small>51.8%</small>
+                                                                            </span>
+                                    <span class="header-champion-stat">
+                                        <em><span class="fa fa-ban"></span></em>
+                                        <strong>Ban Rate</strong>
+                                                                                    <small>9.6%</small>
+                                                                            </span>
+                                </span>
+                                <span class="header-champion-name">
+                                    <strong>Malzahar</strong>
+                                    <span>The Prophet of the Void</span>
+                                </span>
+                            </a>
+                        </div>
+                                                                    <div class="header-nav-33">
+                            <a href="/champions/urgot" class="header-champions-champion" rel="no-tt">
+                                <span class="header-champion-stats">
+                                    <span class="header-champion-image" style="background-image:url('/images/v2/champions/icons/size100x100/6.png');"></span>
+                                    <span class="header-champion-stat">
+                                        <em><span class="fa fa-heart"></span></em>
+                                        <strong>Popularity</strong>
+                                                                                    <small>0.5%</small>
+                                                                            </span>
+                                    <span class="header-champion-stat">
+                                        <em><span class="fa fa-trophy"></span></em>
+                                        <strong>Win Rate</strong>
+                                                                                    <small>48.7%</small>
+                                                                            </span>
+                                    <span class="header-champion-stat">
+                                        <em><span class="fa fa-ban"></span></em>
+                                        <strong>Ban Rate</strong>
+                                                                                    <small>0.2%</small>
+                                                                            </span>
+                                </span>
+                                <span class="header-champion-name">
+                                    <strong>Urgot</strong>
+                                    <span>The Headsman&#039;s Pride</span>
+                                </span>
+                            </a>
+                        </div>
+                                                                    <div class="header-nav-33">
+                            <a href="/champions/diana" class="header-champions-champion" rel="no-tt">
+                                <span class="header-champion-stats">
+                                    <span class="header-champion-image" style="background-image:url('/images/v2/champions/icons/size100x100/131.png');"></span>
+                                    <span class="header-champion-stat">
+                                        <em><span class="fa fa-heart"></span></em>
+                                        <strong>Popularity</strong>
+                                                                                    <small>5.2%</small>
+                                                                            </span>
+                                    <span class="header-champion-stat">
+                                        <em><span class="fa fa-trophy"></span></em>
+                                        <strong>Win Rate</strong>
+                                                                                    <small>49.8%</small>
+                                                                            </span>
+                                    <span class="header-champion-stat">
+                                        <em><span class="fa fa-ban"></span></em>
+                                        <strong>Ban Rate</strong>
+                                                                                    <small>0.3%</small>
+                                                                            </span>
+                                </span>
+                                <span class="header-champion-name">
+                                    <strong>Diana</strong>
+                                    <span>Scorn of the Moon</span>
+                                </span>
+                            </a>
+                        </div>
+                                    </div>
+                <div class="row">
+                                                                    <div class="header-nav-33">
+                            <a href="/champions/velkoz" class="header-champions-champion" rel="no-tt">
+                                <span class="header-champion-stats">
+                                    <span class="header-champion-image" style="background-image:url('/images/v2/champions/icons/size100x100/161.png');"></span>
+                                    <span class="header-champion-stat">
+                                        <em><span class="fa fa-heart"></span></em>
+                                        <strong>Popularity</strong>
+                                                                                    <small>5.8%</small>
+                                                                            </span>
+                                    <span class="header-champion-stat">
+                                        <em><span class="fa fa-trophy"></span></em>
+                                        <strong>Win Rate</strong>
+                                                                                    <small>53%</small>
+                                                                            </span>
+                                    <span class="header-champion-stat">
+                                        <em><span class="fa fa-ban"></span></em>
+                                        <strong>Ban Rate</strong>
+                                                                                    <small>0.2%</small>
+                                                                            </span>
+                                </span>
+                                <span class="header-champion-name">
+                                    <strong>Vel&#039;Koz</strong>
+                                    <span>The Eye of the Void</span>
+                                </span>
+                            </a>
+                        </div>
+                                                                    <div class="header-nav-33">
+                            <a href="/champions/leona" class="header-champions-champion" rel="no-tt">
+                                <span class="header-champion-stats">
+                                    <span class="header-champion-image" style="background-image:url('/images/v2/champions/icons/size100x100/89.png');"></span>
+                                    <span class="header-champion-stat">
+                                        <em><span class="fa fa-heart"></span></em>
+                                        <strong>Popularity</strong>
+                                                                                    <small>13.5%</small>
+                                                                            </span>
+                                    <span class="header-champion-stat">
+                                        <em><span class="fa fa-trophy"></span></em>
+                                        <strong>Win Rate</strong>
+                                                                                    <small>51.4%</small>
+                                                                            </span>
+                                    <span class="header-champion-stat">
+                                        <em><span class="fa fa-ban"></span></em>
+                                        <strong>Ban Rate</strong>
+                                                                                    <small>0.1%</small>
+                                                                            </span>
+                                </span>
+                                <span class="header-champion-name">
+                                    <strong>Leona</strong>
+                                    <span>The Radiant Dawn</span>
+                                </span>
+                            </a>
+                        </div>
+                                                                    <div class="header-nav-33">
+                            <a href="/champions/tristana" class="header-champions-champion" rel="no-tt">
+                                <span class="header-champion-stats">
+                                    <span class="header-champion-image" style="background-image:url('/images/v2/champions/icons/size100x100/18.png');"></span>
+                                    <span class="header-champion-stat">
+                                        <em><span class="fa fa-heart"></span></em>
+                                        <strong>Popularity</strong>
+                                                                                    <small>9.3%</small>
+                                                                            </span>
+                                    <span class="header-champion-stat">
+                                        <em><span class="fa fa-trophy"></span></em>
+                                        <strong>Win Rate</strong>
+                                                                                    <small>48.8%</small>
+                                                                            </span>
+                                    <span class="header-champion-stat">
+                                        <em><span class="fa fa-ban"></span></em>
+                                        <strong>Ban Rate</strong>
+                                                                                    <small>0.1%</small>
+                                                                            </span>
+                                </span>
+                                <span class="header-champion-name">
+                                    <strong>Tristana</strong>
+                                    <span>The Megling Gunner</span>
+                                </span>
+                            </a>
+                        </div>
+                                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="header-nav-tab header-tab-models">
+    <div class="container">
+        <div class="row">
+            <div class="header-nav-20">
+                <div class="header-tab-title">3D Models:</div>
+                <ul>
+                    <li class="header-tab-primary"><a href="/models">Recent</a></li>
+                                            <li><a href="/models?champion=268&skin=3">SKT T1 Azir</a></li>
+                                            <li><a href="/models?champion=5&skin=12">Warring Kingdoms Xin Zhao (Pearl)</a></li>
+                                            <li><a href="/models?champion=150&skin=4">El León Gnar</a></li>
+                                            <li><a href="/models?champion=267&skin=7">Deep Sea Nami</a></li>
+                                            <li><a href="/models?champion=80&skin=8">Baker Pantheon</a></li>
+                                        <li class="header-tab-gap"></li>
+                    <li class="header-tab-primary"><a href="/models">3D Modelviewer</a></li>
+                </ul>
+            </div>
+            <div class="header-tab-container header-nav-80">
+                <div class="row">
+                                            <div class="header-nav-20">
+                            <a href="/models?champion=69&skin=1" class="header-models-model">
+                                <span class="header-model-image" style="background-image:url('/images/v2/champions/skins/size199x362/69_1');"></span>
+                                <span class="header-model-name">
+                                    <small>Desperada</small>
+                                    <strong>Cassiopeia</strong>
+                                    <span class="header-model-cost">520</span>
+                                </span>
+                            </a>
+                        </div>
+                                            <div class="header-nav-20">
+                            <a href="/models?champion=36&skin=8" class="header-models-model">
+                                <span class="header-model-image" style="background-image:url('/images/v2/champions/skins/size199x362/36_8');"></span>
+                                <span class="header-model-name">
+                                    <small>Pool Party</small>
+                                    <strong>Dr. Mundo</strong>
+                                    <span class="header-model-cost">975</span>
+                                </span>
+                            </a>
+                        </div>
+                                            <div class="header-nav-20">
+                            <a href="/models?champion=90&skin=4" class="header-models-model">
+                                <span class="header-model-image" style="background-image:url('/images/v2/champions/skins/size199x362/90_4');"></span>
+                                <span class="header-model-name">
+                                    <small>Overlord</small>
+                                    <strong>Malzahar</strong>
+                                    <span class="header-model-cost">975</span>
+                                </span>
+                            </a>
+                        </div>
+                                            <div class="header-nav-20">
+                            <a href="/models?champion=20&skin=3" class="header-models-model">
+                                <span class="header-model-image" style="background-image:url('/images/v2/champions/skins/size199x362/20_3');"></span>
+                                <span class="header-model-name">
+                                    <small>Grungy</small>
+                                    <strong>Nunu</strong>
+                                    <span class="header-model-cost">750</span>
+                                </span>
+                            </a>
+                        </div>
+                                            <div class="header-nav-20">
+                            <a href="/models?champion=69&skin=3" class="header-models-model">
+                                <span class="header-model-image" style="background-image:url('/images/v2/champions/skins/size199x362/69_3');"></span>
+                                <span class="header-model-name">
+                                    <small>Mythic</small>
+                                    <strong>Cassiopeia</strong>
+                                    <span class="header-model-cost">975</span>
+                                </span>
+                            </a>
+                        </div>
+                                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="header-nav-tab header-tab-leaderboards">
+    <div class="container">
+        <div class="row">
+            <div class="header-nav-20">
+                <div class="header-tab-title">Leaderboards:</div>
+                <ul>
+                                            <li><a href="/leaderboards#/na/1">North America</a></li>
+                                            <li><a href="/leaderboards#/euw/1">Europe West</a></li>
+                                            <li><a href="/leaderboards#/eune/1">Europe Nordic &amp; East</a></li>
+                                            <li><a href="/leaderboards#/br/1">Brazil</a></li>
+                                            <li><a href="/leaderboards#/kr/1">Korea</a></li>
+                                            <li><a href="/leaderboards#/tr/1">Turkey</a></li>
+                                            <li><a href="/leaderboards#/ru/1">Russia</a></li>
+                                            <li><a href="/leaderboards#/lan/1">Latin America North</a></li>
+                                            <li><a href="/leaderboards#/las/1">Latin America South</a></li>
+                                            <li><a href="/leaderboards#/oce/1">Oceania</a></li>
+                                    </ul>
+            </div>
+            <div class="header-tab-container header-nav-80">
+                <div class="row">
+                                            <div class="header-nav-33">
+                            <a href="/summoner/br/523864" class="header-leaderboards-panel">
+                                <span class="header-leaderboard-image" style="background-image:url('/images/v2/summoner/icons/size64x64/1381.png');"></span>
+                                <span class="header-leaderboard-name">
+                                    <strong>Ayel TRAVESSO</strong>
+                                    <small>Brazil</small>
+                                    <span class="header-leaderboard-rank">#1</span>
+                                    <span class="header-leaderboard-stats">
+                                        <span class="header-leaderboard-stat"><span class="fa fa-star"></span> 2,966</span>
+                                        <span class="header-leaderboard-green header-leaderboard-stat">445 W</span>
+                                        <span class="header-leaderboard-red header-leaderboard-stat">342 L</span>
+                                    </span>
+                                </span>
+                            </a>
+                        </div>
+                                                                    <div class="header-nav-33">
+                            <a href="/summoner/eune/24173773" class="header-leaderboards-panel">
+                                <span class="header-leaderboard-image" style="background-image:url('/images/v2/summoner/icons/size64x64/10.png');"></span>
+                                <span class="header-leaderboard-name">
+                                    <strong>Dans la légende</strong>
+                                    <small>Europe Nordic &amp; East</small>
+                                    <span class="header-leaderboard-rank">#1</span>
+                                    <span class="header-leaderboard-stats">
+                                        <span class="header-leaderboard-stat"><span class="fa fa-star"></span> 2,953</span>
+                                        <span class="header-leaderboard-green header-leaderboard-stat">280 W</span>
+                                        <span class="header-leaderboard-red header-leaderboard-stat">167 L</span>
+                                    </span>
+                                </span>
+                            </a>
+                        </div>
+                                                                    <div class="header-nav-33">
+                            <a href="/summoner/euw/20050482" class="header-leaderboards-panel">
+                                <span class="header-leaderboard-image" style="background-image:url('/images/v2/summoner/icons/size64x64/548.png');"></span>
+                                <span class="header-leaderboard-name">
+                                    <strong>loulex</strong>
+                                    <small>Europe West</small>
+                                    <span class="header-leaderboard-rank">#1</span>
+                                    <span class="header-leaderboard-stats">
+                                        <span class="header-leaderboard-stat"><span class="fa fa-star"></span> 2,964</span>
+                                        <span class="header-leaderboard-green header-leaderboard-stat">900 W</span>
+                                        <span class="header-leaderboard-red header-leaderboard-stat">803 L</span>
+                                    </span>
+                                </span>
+                            </a>
+                        </div>
+                                                    </div>
+                            <div class="row">
+                                                                    <div class="header-nav-33">
+                            <a href="/summoner/kr/2035958" class="header-leaderboards-panel">
+                                <span class="header-leaderboard-image" style="background-image:url('/images/v2/summoner/icons/size64x64/778.png');"></span>
+                                <span class="header-leaderboard-name">
+                                    <strong>Skewed</strong>
+                                    <small>Korea</small>
+                                    <span class="header-leaderboard-rank">#1</span>
+                                    <span class="header-leaderboard-stats">
+                                        <span class="header-leaderboard-stat"><span class="fa fa-star"></span> 2,963</span>
+                                        <span class="header-leaderboard-green header-leaderboard-stat">613 W</span>
+                                        <span class="header-leaderboard-red header-leaderboard-stat">425 L</span>
+                                    </span>
+                                </span>
+                            </a>
+                        </div>
+                                                                    <div class="header-nav-33">
+                            <a href="/summoner/lan/75295" class="header-leaderboards-panel">
+                                <span class="header-leaderboard-image" style="background-image:url('/images/v2/summoner/icons/size64x64/1337.png');"></span>
+                                <span class="header-leaderboard-name">
+                                    <strong>Fenix AL</strong>
+                                    <small>Latin America North</small>
+                                    <span class="header-leaderboard-rank">#1</span>
+                                    <span class="header-leaderboard-stats">
+                                        <span class="header-leaderboard-stat"><span class="fa fa-star"></span> 2,948</span>
+                                        <span class="header-leaderboard-green header-leaderboard-stat">370 W</span>
+                                        <span class="header-leaderboard-red header-leaderboard-stat">254 L</span>
+                                    </span>
+                                </span>
+                            </a>
+                        </div>
+                                                                    <div class="header-nav-33">
+                            <a href="/summoner/las/45137" class="header-leaderboards-panel">
+                                <span class="header-leaderboard-image" style="background-image:url('/images/v2/summoner/icons/size64x64/914.png');"></span>
+                                <span class="header-leaderboard-name">
+                                    <strong>WarangeIus</strong>
+                                    <small>Latin America South</small>
+                                    <span class="header-leaderboard-rank">#1</span>
+                                    <span class="header-leaderboard-stats">
+                                        <span class="header-leaderboard-stat"><span class="fa fa-star"></span> 2,963</span>
+                                        <span class="header-leaderboard-green header-leaderboard-stat">345 W</span>
+                                        <span class="header-leaderboard-red header-leaderboard-stat">271 L</span>
+                                    </span>
+                                </span>
+                            </a>
+                        </div>
+                                                    </div>
+                            <div class="row">
+                                                                    <div class="header-nav-33">
+                            <a href="/summoner/na/20533841" class="header-leaderboards-panel">
+                                <span class="header-leaderboard-image" style="background-image:url('/images/v2/summoner/icons/size64x64/10.png');"></span>
+                                <span class="header-leaderboard-name">
+                                    <strong>Cody Sun</strong>
+                                    <small>North America</small>
+                                    <span class="header-leaderboard-rank">#1</span>
+                                    <span class="header-leaderboard-stats">
+                                        <span class="header-leaderboard-stat"><span class="fa fa-star"></span> 2,962</span>
+                                        <span class="header-leaderboard-green header-leaderboard-stat">472 W</span>
+                                        <span class="header-leaderboard-red header-leaderboard-stat">363 L</span>
+                                    </span>
+                                </span>
+                            </a>
+                        </div>
+                                                                    <div class="header-nav-33">
+                            <a href="/summoner/oce/6020977" class="header-leaderboards-panel">
+                                <span class="header-leaderboard-image" style="background-image:url('/images/v2/summoner/icons/size64x64/1211.png');"></span>
+                                <span class="header-leaderboard-name">
+                                    <strong>           king1</strong>
+                                    <small>Oceania</small>
+                                    <span class="header-leaderboard-rank">#1</span>
+                                    <span class="header-leaderboard-stats">
+                                        <span class="header-leaderboard-stat"><span class="fa fa-star"></span> 2,968</span>
+                                        <span class="header-leaderboard-green header-leaderboard-stat">225 W</span>
+                                        <span class="header-leaderboard-red header-leaderboard-stat">133 L</span>
+                                    </span>
+                                </span>
+                            </a>
+                        </div>
+                                                                    <div class="header-nav-33">
+                            <a href="/summoner/ru/5260136" class="header-leaderboards-panel">
+                                <span class="header-leaderboard-image" style="background-image:url('/images/v2/summoner/icons/size64x64/1151.png');"></span>
+                                <span class="header-leaderboard-name">
+                                    <strong>her prince</strong>
+                                    <small>Russia</small>
+                                    <span class="header-leaderboard-rank">#1</span>
+                                    <span class="header-leaderboard-stats">
+                                        <span class="header-leaderboard-stat"><span class="fa fa-star"></span> 2,955</span>
+                                        <span class="header-leaderboard-green header-leaderboard-stat">263 W</span>
+                                        <span class="header-leaderboard-red header-leaderboard-stat">107 L</span>
+                                    </span>
+                                </span>
+                            </a>
+                        </div>
+                                                            </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="header-nav-tab header-tab-streams">
+    <div class="container">
+        <div class="row">
+            <div class="header-nav-20">
+                <div class="header-tab-title">Streams:</div>
+                <ul>
+                    <li class="header-tab-primary"><a href="/streams">More Streams</a></li>
+                                            <li><a href="/summoner/na/5908#stream">Dyrus</a></li>
+                                            <li><a href="/summoner/na/1496#stream">Valkrin</a></li>
+                                            <li><a href="/summoner/na/245353#stream">잘 못</a></li>
+                                        <li class="header-tab-gap"></li>
+                    <li class="header-tab-primary"><a href="/streams">All Streams</a></li>
+                </ul>
+            </div>
+            <div class="header-tab-container header-nav-80">
+                <div class="row">
+                                            <div class="header-nav-25">
+                            <a href="/summoner/na/5908#stream" class="header-streams-stream">
+                                <span class="header-stream-image" style="background-image:url('https://static-cdn.jtvnw.net/previews-ttv/live_user_tsm_dyrus-320x180.jpg');"></span>
+                                <span class="header-stream-name">
+                                    <strong>Dyrus</strong>
+                                    <small>DIAMOND</small>
+                                </span>
+                                <span class="header-stream-stats">
+                                    <span class="header-stream-stat">
+                                        <em><span class="fa fa-eye"></span></em>
+                                        <strong>4,112</strong>
+                                    </span>
+                                    <span class="header-stream-stat">
+                                        <em><span class="fa fa-globe"></span></em>
+                                        <strong>NA</strong>
+                                    </span>
+                                </span>
+                            </a>
+                        </div>
+                                            <div class="header-nav-25">
+                            <a href="/summoner/na/1496#stream" class="header-streams-stream">
+                                <span class="header-stream-image" style="background-image:url('https://static-cdn.jtvnw.net/previews-ttv/live_user_valkrin-320x180.jpg');"></span>
+                                <span class="header-stream-name">
+                                    <strong>Valkrin</strong>
+                                    <small>MASTER</small>
+                                </span>
+                                <span class="header-stream-stats">
+                                    <span class="header-stream-stat">
+                                        <em><span class="fa fa-eye"></span></em>
+                                        <strong>2,582</strong>
+                                    </span>
+                                    <span class="header-stream-stat">
+                                        <em><span class="fa fa-globe"></span></em>
+                                        <strong>NA</strong>
+                                    </span>
+                                </span>
+                            </a>
+                        </div>
+                                            <div class="header-nav-25">
+                            <a href="/summoner/na/245353#stream" class="header-streams-stream">
+                                <span class="header-stream-image" style="background-image:url('https://static-cdn.jtvnw.net/previews-ttv/live_user_flosd-320x180.jpg');"></span>
+                                <span class="header-stream-name">
+                                    <strong>잘 못</strong>
+                                    <small>MASTER</small>
+                                </span>
+                                <span class="header-stream-stats">
+                                    <span class="header-stream-stat">
+                                        <em><span class="fa fa-eye"></span></em>
+                                        <strong>2,398</strong>
+                                    </span>
+                                    <span class="header-stream-stat">
+                                        <em><span class="fa fa-globe"></span></em>
+                                        <strong>NA</strong>
+                                    </span>
+                                </span>
+                            </a>
+                        </div>
+                                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+    </header>
+
+    <main>
+                            <div class="announcement-container container">
+                <div id="announcement-bar" style="background-color: #0066AA;">
+Excited for Worlds? <a href="http://www.lolking.net/news/worlds-2016-recap-group-stage-day-5">Here's our in-depth coverage about day five, including a RP giveaway</a>!
+</div>
+            </div>
+        
+        <script>
+            $(function() {
+                new LKFeedBack($, $('#feedback-form'), $('#feedback-button'));
+
+                //https://github.com/odhyan/trie/blob/master/trie.js
+                Trie=function(){this.words=0;this.prefixes=0;this.children=[]};Trie.prototype={insert:function(e,t){if(e.length==0){return}var n=this,r,i;if(t===undefined){t=0}if(t===e.length){n.words++;return}n.prefixes++;r=e[t];if(n.children[r]===undefined){n.children[r]=new Trie}i=n.children[r];i.insert(e,t+1)},remove:function(e,t){if(e.length==0){return}var n=this,r,i;if(t===undefined){t=0}if(n===undefined){return}if(t===e.length){n.words--;return}n.prefixes--;r=e[t];i=n.children[r];i.remove(e,t+1)},update:function(e,t){if(e.length==0||t.length==0){return}this.remove(e);this.insert(t)},countWord:function(e,t){if(e.length==0){return 0}var n=this,r,i,s=0;if(t===undefined){t=0}if(t===e.length){return n.words}r=e[t];i=n.children[r];if(i!==undefined){s=i.countWord(e,t+1)}return s},countPrefix:function(e,t){if(e.length==0){return 0}var n=this,r,i,s=0;if(t===undefined){t=0}if(t===e.length){return n.prefixes}var r=e[t];i=n.children[r];if(i!==undefined){s=i.countPrefix(e,t+1)}return s},find:function(e){if(e.length==0){return false}if(this.countWord(e)>0){return true}else{return false}},getAllWords:function(e){var t=this,n,r,i=[];if(e===undefined){e=""}if(t===undefined){return[]}if(t.words>0){i.push(e)}for(n in t.children){r=t.children[n];i=i.concat(r.getAllWords(e+n))}return i},autoComplete:function(e,t){if(e.length==0){return[]}var n=this,r,i;if(t===undefined){t=0}r=e[t];i=n.children[r];if(i===undefined){return[]}if(t===e.length-1){return i.getAllWords(e)}return i.autoComplete(e,t+1)}}
+
+                //http://stackoverflow.com/questions/460070/detecting-mistyped-email-addresses-in-javascript#answer-460102
+                levenshteinenator=function(e,t){var n;var r=e.length;var i=t.length;if(r<i){var s=e;e=t;t=s;var o=r;r=i;i=o}var u=new Array;u[0]=new Array;for(var s=0;s<i+1;s++){u[0][s]=s}for(var a=1;a<r+1;a++){u[a]=new Array;u[a][0]=a;for(var f=1;f<i+1;f++){n=e.charAt(a-1)==t.charAt(f-1)?0:1;u[a][f]=minimator(u[a-1][f]+1,u[a][f-1]+1,u[a-1][f-1]+n)}}return u[r][i]};minimator=function(e,t,n){if(e<t&&e<n)return e;if(t<e&&t<n)return t;return n}
+
+                var T = new Trie();
+
+                $.each(LOLKING.champions, function(i, o) {
+                    T.insert(o.internal_name.toLowerCase());
+                });
+
+                var regions = LOLKING.regions;
+                var cookie_name = 'default-region';
+                var initial_region = Cookies.get(cookie_name) || 'none';
+
+                var $region = $('.tselect-container ul li[data-tselect-value="' + initial_region.toUpperCase() + '"]');
+
+                var hasPickedRegion = $region.length != 0;
+
+                if( !hasPickedRegion ) {
+
+                    initial_region = 'na';
+                    $('#select-your-region-callout').fadeIn();
+                    $region = $('.tselect-container ul li[data-tselect-value="' + initial_region.toUpperCase() + '"]');
+
+                }
+
+                var selectedText = $region.attr('data-tselect-selected-label') || $(this).text();
+                var selectedValue = $region.attr('data-tselect-value') || $(this).text();
+                $region.parent().children().first().text(selectedText);
+                $region.parent().parent().find('[type="hidden"]').val(selectedValue);
+
+                $('.tselect-container ul li:gt(0)').click(function(){
+
+                    Cookies.set(cookie_name, $(this).attr('data-tselect-value').toLowerCase(), {expires: 31536000});
+                    $('.suggestive-search-container [name="name"]').trigger('keyup').focus();
+
+                });
+
+                $('.suggestive-search-container [name="name"]').bind('focus', function(e){
+                    if( $('#search-suggestions-container').children().length > 0 ) {
+                        $('#search-suggestions-container').fadeIn();
+                        $('.suggestive-search-container').addClass('suggestive-search-container-open');
+                        if( !hasPickedRegion ) $('#select-your-region-callout').hide();
+                    }
+                });
+
+                $('.suggestive-search-container [name="name"]').bind('keyup', function(e){
+
+                    if( e.keyCode && e.keyCode == 27 ) {
+                        $(this).blur();
+                        return;
+                    }
+
+                    var str = $("<div/>").text($(this).val()).html();
+                    var slug = str.toLowerCase().replace(/[^a-z]/g, "");
+                    var champion_slug = null;
+
+                    if( slug.length ) {
+
+                        var trie_matches = T.autoComplete(slug);
+
+                        if( trie_matches.length ) {
+
+                            champion_slug = trie_matches.sort(function (a, b) { return a.length - b.length; })[0];
+
+                        } else {
+
+                            var closest_champion;
+                            var closest_champion_score = 10;
+
+                            $.each(LOLKING.champions, function(i, o) {
+                                var score = levenshteinenator(slug, o.internal_name);
+                                if( score < closest_champion_score ) {
+                                    closest_champion_score = score;
+                                    closest_champion = o.internal_name;
+                                }
+
+                            });
+
+                            if( closest_champion_score <= 3 ) {
+                                champion_slug = closest_champion;
+                            }
+
+                        }
+
+                        if( champion_slug && LOLKING.champions[champion_slug] ) {
+                            var h = [
+                            '<li>',
+                                '<div id="suggestion-div">',
+                                    '<div style="width: 48px; height: 48px; background: url(/images/v2/champions/icons/size48x48/' + LOLKING.champions[champion_slug].champion_id + '.png) center; border-radius: 3px; box-shadow: 0 0 2px #000; float: left; margin-right: 10px;"></div>',
+                                    '<div style="float: left;">',
+                                        '<div style="text-align: left; text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);">' + LOLKING.champions[champion_slug].name + '</div>',
+                                        '<p>Check out <a href="/guides/list.php?champion=' + LOLKING.champions[champion_slug].file + '">guides</a>, <a href="/models/?champion=' + LOLKING.champions[champion_slug].champion_id + '&skin=0">3D models</a>, and <a href="/champions/' + LOLKING.champions[champion_slug].file + '#statistics">statistics</a>.</p>',
+                                    '</div>',
+                                '</div>',
+                            '</li>'
+                            ].join('');
+
+                            $('.search-suggestions-container').empty().html(h);
+                            $('#suggestion-div').click(function() {window.location.replace('/champions/' + LOLKING.champions[champion_slug].file)});
+                        }
+                    }
+
+                    if( $('.search-suggestions-container').children().length > 0 ) {
+                        $('.search-suggestions-container').fadeIn();
+                        $('.suggestive-search-container').addClass('suggestive-search-container-open');
+                        if( !hasPickedRegion ) $('#select-your-region-callout').hide();
+                    } else {
+                        $('.search-suggestions-container').hide();
+                        $('.suggestive-search-container').removeClass('suggestive-search-container-open');
+                        if( !hasPickedRegion ) $('#select-your-region-callout').fadeIn();
+                    }
+
+                });
+
+                var lastSearch = localStorage.getItem('lastSearch');
+                if (lastSearch != null && lastSearch.length > 0) {
+                    $('.suggestive-search-container [name="name"]').attr("placeholder", lastSearch);
+                } else {
+                    $('.suggestive-search-container [name="name"]').attr("placeholder", "Summoner name...");
+                }
+
+                $('.suggestive-search-container form').submit(function(event) {
+                    var val = $('.suggestive-search-container [name="name"]').val();
+
+                    if (val.length > 0) {
+                        $.each(LOLKING.champions, function(index, value) {
+                            if (value.name.toLowerCase() == val.toLowerCase()) {
+                                window.location.replace('/champions/' + value.file);
+                                event.preventDefault();
+                            }
+                        });
+
+                        localStorage.setItem('lastSearch', val);
+                    } else {
+                        var ls = localStorage.getItem('lastSearch');
+                        if (ls != null && ls.length > 0) {
+                            $('.suggestive-search-container [name="name"]').val(ls);
+                        } else {
+                            event.preventDefault();
+                        }
+                    }
+                });
+            });
+        </script>
+
+        <div class="ad-container">
+            <!-- START: 728x90 -->
+<div class="horizontal-leaderboard">
+    <div id="za-leaderboard">
+        <script>
+        	if (getMBChannel() != 'LolkingSummoner') {
+	            if (typeof MonkeyBroker != "undefined") {
+	                MonkeyBroker.fillSlot("horizontal-atf");
+	            } else {
+	                $('#za-leaderboard').append('<img src="//lkimg.zamimg.com/images/adblock.jpg">');
+	            }
+	        } else {
+	        	$('.ad-container').remove();
+	        }
+        </script>
+    </div>
+</div>
+<!-- END: 728x90 -->        </div>
+
+        <div class="container">
+            <div class="main block-content">
+                
+    <div id="leftcol">
+
+        <div class="pane">
+            <div style="margin: 10px;">
+                <h3 class="boxheading" style="font-size: 14px; height: 20px; line-height: 20px; color: #CCC;">Chart Filters</h3>
+                <div class="boxcontent" style="background: #222;">
+                    <div class="jerek-list-filter champion-list-filter" style="margin: 11px;">
+
+                        <table>
+                            <tr>
+                                <th>Chart Type</th>
+                                <td>
+                                    <select name="type">
+                                                                                    <option value="champion-popularity">Most Popular Champions</option>
+                                                                                    <option value="champion-unpopularity">Least Popular Champions</option>
+                                                                                    <option value="champion-winrate">Highest Win Rate Champions</option>
+                                                                                    <option value="champion-loserate">Lowest Win Rate Champions</option>
+                                                                                    <option value="bans">Champion Bans</option>
+                                                                                    <option value="spell-popularity">Spell Popularity</option>
+                                                                                    <option value="item-popularity">Item Popularity</option>
+                                                                                    <option value="bottom-synergy">Bottom Lane Synergy</option>
+                                                                                    <option value="mid-matchup">Middle Lane Matchup</option>
+                                                                                    <option value="top-matchup">Top Lane Matchup</option>
+                                                                                    <option value="jungle-matchup">Jungle Matchup</option>
+                                                                                    <option value="bottom-matchup">Bottom Lane Matchup</option>
+                                                                            </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Region</th>
+                                <td>
+                                    <select name="chart_region">
+                                                                                    <option value="all">All Regions</option>
+                                                                                    <option value="na">North America</option>
+                                                                                    <option value="euw">Europe West</option>
+                                                                                    <option value="eune">Europe Nordic &amp; East</option>
+                                                                                    <option value="br">Brazil</option>
+                                                                                    <option value="kr">Korea</option>
+                                                                            </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Map</th>
+                                <td>
+                                                                            <input checked="checked" type="radio" name="map" value="sr" id="map-sr"><label for="map-sr">Summoner&#039;s Rift</label>
+                                                                            <input checked="checked" type="radio" name="map" value="tt" id="map-tt"><label for="map-tt">Twisted Treeline</label>
+                                                                            <input checked="checked" type="radio" name="map" value="ha" id="map-ha"><label for="map-ha">Howling Abyss</label>
+                                                                    </td>
+                            </tr>
+                            <tr>
+                                <th>Time</th>
+                                <td>
+                                                                            <input checked="checked" type="radio" name="range" value="daily" id="range-daily"><label for="range-daily">Daily</label>
+                                                                            <input checked="checked" type="radio" name="range" value="weekly" id="range-weekly"><label for="range-weekly">Weekly</label>
+                                                                            <input checked="checked" type="radio" name="range" value="monthly" id="range-monthly"><label for="range-monthly">Monthly</label>
+                                                                    </td>
+                            </tr>
+                            <tr>
+                                <th>Queue</th>
+                                <td>
+                                                                                                                        <input checked="checked" type="radio" name="queue" value="normal" id="queue-normal">
+                                            <label for="queue-normal">Normal</label>
+                                                                                                                                                                <input checked="checked" type="radio" name="queue" value="1x1" id="queue-1x1">
+                                            <label for="queue-1x1">Ranked</label>
+                                                                                                            </td>
+                            </tr>
+                                                        <tr>
+                                <th>League</th>
+                                <td>
+                                                                            <input checked="checked" type="radio" name="league" value="ranked" id="league-ranked">
+                                        <label for="league-ranked">All Ranked</label>
+                                                                            <input checked="checked" type="radio" name="league" value="bronze" id="league-bronze">
+                                        <label for="league-bronze">Bronze</label>
+                                                                            <input checked="checked" type="radio" name="league" value="silver" id="league-silver">
+                                        <label for="league-silver">Silver</label>
+                                                                            <input checked="checked" type="radio" name="league" value="gold" id="league-gold">
+                                        <label for="league-gold">Gold</label>
+                                                                            <input checked="checked" type="radio" name="league" value="platinum" id="league-platinum">
+                                        <label for="league-platinum">Platinum</label>
+                                                                            <input checked="checked" type="radio" name="league" value="diamond" id="league-diamond">
+                                        <label for="league-diamond">Diamond</label>
+                                                                            <input checked="checked" type="radio" name="league" value="challenger" id="league-challenger">
+                                        <label for="league-challenger">Master+</label>
+                                                                    </td>
+                            </tr>
+                                                    </table>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin: 10px;">
+                <h3 class="boxheading">Highest Win Rate Champions (9/28/2016 - 10/5/2016)</h3>
+                <div class="chart-gradient">
+                    <div id="chart-regular" data-lkchart-id="small-chart" style="display: inline-block; margin-left: 20px; margin-top: 15px; margin-bottom: 10px; width: 780px; text-align: center; font-size: 16px;">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="subpage-ad-header top-space">
+            <!-- START: 728x90 -->
+<div class="horizontal-no-bg">
+    <div id="za-leaderboardBTF">
+        <script>
+            if (typeof MonkeyBroker != "undefined") {
+                MonkeyBroker.fillSlot("horizontal-btf");
+            }
+        </script>
+    </div>
+</div>
+<!-- END: 728x90 -->
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $(function() {
+            var updateFn = function(){
+                var type = $('[name="type"]').val();
+                var region = $('[name="chart_region"]').val();
+                var map = $('[name="map"]:checked').val();
+                var range = $('[name="range"]:checked').val();
+                var queue = $('[name="queue"]:checked').val();
+                var league = $('[name="league"]:checked').val();
+
+                var location = '/charts?region=' + region + '&type=' + type + '&range=' + range + '&map=' + map + '&queue=' + queue;
+                if(league != null)location += '&league=' + league;
+
+                window.location = location;
+            };
+
+            $('[name="map"],[name="league"],[name="queue"],[name="range"]').click(updateFn);
+            $('[name="type"],[name="chart_region"]').change(updateFn);
+
+            $('[name="range"][value="weekly"]').attr('checked', 'checked');
+            $('[name="map"][value="sr"]').attr('checked', 'checked');
+            $('[name="queue"][value="1x1"]').attr('checked', 'checked');
+            $('[name="league"][value="ranked"]').attr('checked', 'checked');
+            $('[name="type"]').val('champion-winrate');
+            $('[name="chart_region"]').val('na');
+
+                            LKChart.storeLegacyChart('small-chart', '\x7B\x22template\x22\x3A\x22championWinrateBarRegular\x22,\x22groups\x22\x3A\x5B\x7B\x22name\x22\x3A\x22Sona\x22,\x22champion_id\x22\x3A\x2237\x22,\x22url\x22\x3A\x22\x5C\x2Fchampions\x5C\x2Fsona\x22,\x22values1\x22\x3A\x2253.62,12.08\x22,\x22values2\x22\x3A\x2253.62,39786,12.08\x22\x7D,\x7B\x22name\x22\x3A\x22Miss\x20Fortune\x22,\x22champion_id\x22\x3A\x2221\x22,\x22url\x22\x3A\x22\x5C\x2Fchampions\x5C\x2Fmissfortune\x22,\x22values1\x22\x3A\x2253.56,13.89\x22,\x22values2\x22\x3A\x2253.56,45735,13.89\x22\x7D,\x7B\x22name\x22\x3A\x22Swain\x22,\x22champion_id\x22\x3A\x2250\x22,\x22url\x22\x3A\x22\x5C\x2Fchampions\x5C\x2Fswain\x22,\x22values1\x22\x3A\x2253.52,3.58\x22,\x22values2\x22\x3A\x2253.52,11789,3.58\x22\x7D,\x7B\x22name\x22\x3A\x22Amumu\x22,\x22champion_id\x22\x3A\x2232\x22,\x22url\x22\x3A\x22\x5C\x2Fchampions\x5C\x2Famumu\x22,\x22values1\x22\x3A\x2253.44,9.28\x22,\x22values2\x22\x3A\x2253.44,30549,9.28\x22\x7D,\x7B\x22name\x22\x3A\x22Brand\x22,\x22champion_id\x22\x3A\x2263\x22,\x22url\x22\x3A\x22\x5C\x2Fchampions\x5C\x2Fbrand\x22,\x22values1\x22\x3A\x2253.02,9.84\x22,\x22values2\x22\x3A\x2253.02,32421,9.84\x22\x7D,\x7B\x22name\x22\x3A\x22Sion\x22,\x22champion_id\x22\x3A\x2214\x22,\x22url\x22\x3A\x22\x5C\x2Fchampions\x5C\x2Fsion\x22,\x22values1\x22\x3A\x2252.99,4.19\x22,\x22values2\x22\x3A\x2252.99,13800,4.19\x22\x7D,\x7B\x22name\x22\x3A\x22Vel\x5C\x5C\x27Koz\x22,\x22champion_id\x22\x3A\x22161\x22,\x22url\x22\x3A\x22\x5C\x2Fchampions\x5C\x2Fvelkoz\x22,\x22values1\x22\x3A\x2252.77,6.52\x22,\x22values2\x22\x3A\x2252.77,21459,6.52\x22\x7D,\x7B\x22name\x22\x3A\x22Skarner\x22,\x22champion_id\x22\x3A\x2272\x22,\x22url\x22\x3A\x22\x5C\x2Fchampions\x5C\x2Fskarner\x22,\x22values1\x22\x3A\x2252.77,4.36\x22,\x22values2\x22\x3A\x2252.77,14347,4.36\x22\x7D,\x7B\x22name\x22\x3A\x22Tryndamere\x22,\x22champion_id\x22\x3A\x2223\x22,\x22url\x22\x3A\x22\x5C\x2Fchampions\x5C\x2Ftryndamere\x22,\x22values1\x22\x3A\x2252.71,6.39\x22,\x22values2\x22\x3A\x2252.71,21058,6.39\x22\x7D,\x7B\x22name\x22\x3A\x22Jinx\x22,\x22champion_id\x22\x3A\x22222\x22,\x22url\x22\x3A\x22\x5C\x2Fchampions\x5C\x2Fjinx\x22,\x22values1\x22\x3A\x2252.7,24.76\x22,\x22values2\x22\x3A\x2252.7,81548,24.76\x22,\x22last\x22\x3Atrue\x7D\x5D\x7D', '\x7B\x22template\x22\x3A\x22championWinrateBarBig\x22,\x22groups\x22\x3A\x5B\x7B\x22name\x22\x3A\x22Sona\x22,\x22champion_id\x22\x3A\x2237\x22,\x22url\x22\x3A\x22\x5C\x2Fchampions\x5C\x2Fsona\x22,\x22values1\x22\x3A\x2253.62,12.08\x22,\x22values2\x22\x3A\x2253.62,39786,12.08\x22\x7D,\x7B\x22name\x22\x3A\x22Miss\x20Fortune\x22,\x22champion_id\x22\x3A\x2221\x22,\x22url\x22\x3A\x22\x5C\x2Fchampions\x5C\x2Fmissfortune\x22,\x22values1\x22\x3A\x2253.56,13.89\x22,\x22values2\x22\x3A\x2253.56,45735,13.89\x22\x7D,\x7B\x22name\x22\x3A\x22Swain\x22,\x22champion_id\x22\x3A\x2250\x22,\x22url\x22\x3A\x22\x5C\x2Fchampions\x5C\x2Fswain\x22,\x22values1\x22\x3A\x2253.52,3.58\x22,\x22values2\x22\x3A\x2253.52,11789,3.58\x22\x7D,\x7B\x22name\x22\x3A\x22Amumu\x22,\x22champion_id\x22\x3A\x2232\x22,\x22url\x22\x3A\x22\x5C\x2Fchampions\x5C\x2Famumu\x22,\x22values1\x22\x3A\x2253.44,9.28\x22,\x22values2\x22\x3A\x2253.44,30549,9.28\x22\x7D,\x7B\x22name\x22\x3A\x22Brand\x22,\x22champion_id\x22\x3A\x2263\x22,\x22url\x22\x3A\x22\x5C\x2Fchampions\x5C\x2Fbrand\x22,\x22values1\x22\x3A\x2253.02,9.84\x22,\x22values2\x22\x3A\x2253.02,32421,9.84\x22\x7D,\x7B\x22name\x22\x3A\x22Sion\x22,\x22champion_id\x22\x3A\x2214\x22,\x22url\x22\x3A\x22\x5C\x2Fchampions\x5C\x2Fsion\x22,\x22values1\x22\x3A\x2252.99,4.19\x22,\x22values2\x22\x3A\x2252.99,13800,4.19\x22\x7D,\x7B\x22name\x22\x3A\x22Vel\x5C\x5C\x27Koz\x22,\x22champion_id\x22\x3A\x22161\x22,\x22url\x22\x3A\x22\x5C\x2Fchampions\x5C\x2Fvelkoz\x22,\x22values1\x22\x3A\x2252.77,6.52\x22,\x22values2\x22\x3A\x2252.77,21459,6.52\x22\x7D,\x7B\x22name\x22\x3A\x22Skarner\x22,\x22champion_id\x22\x3A\x2272\x22,\x22url\x22\x3A\x22\x5C\x2Fchampions\x5C\x2Fskarner\x22,\x22values1\x22\x3A\x2252.77,4.36\x22,\x22values2\x22\x3A\x2252.77,14347,4.36\x22\x7D,\x7B\x22name\x22\x3A\x22Tryndamere\x22,\x22champion_id\x22\x3A\x2223\x22,\x22url\x22\x3A\x22\x5C\x2Fchampions\x5C\x2Ftryndamere\x22,\x22values1\x22\x3A\x2252.71,6.39\x22,\x22values2\x22\x3A\x2252.71,21058,6.39\x22\x7D,\x7B\x22name\x22\x3A\x22Jinx\x22,\x22champion_id\x22\x3A\x22222\x22,\x22url\x22\x3A\x22\x5C\x2Fchampions\x5C\x2Fjinx\x22,\x22values1\x22\x3A\x2252.7,24.76\x22,\x22values2\x22\x3A\x2252.7,81548,24.76\x22\x7D,\x7B\x22name\x22\x3A\x22Janna\x22,\x22champion_id\x22\x3A\x2240\x22,\x22url\x22\x3A\x22\x5C\x2Fchampions\x5C\x2Fjanna\x22,\x22values1\x22\x3A\x2252.67,12.46\x22,\x22values2\x22\x3A\x2252.67,41021,12.46\x22\x7D,\x7B\x22name\x22\x3A\x22Graves\x22,\x22champion_id\x22\x3A\x22104\x22,\x22url\x22\x3A\x22\x5C\x2Fchampions\x5C\x2Fgraves\x22,\x22values1\x22\x3A\x2252.55,11.02\x22,\x22values2\x22\x3A\x2252.55,36285,11.02\x22\x7D,\x7B\x22name\x22\x3A\x22Ahri\x22,\x22champion_id\x22\x3A\x22103\x22,\x22url\x22\x3A\x22\x5C\x2Fchampions\x5C\x2Fahri\x22,\x22values1\x22\x3A\x2252.54,11.9\x22,\x22values2\x22\x3A\x2252.54,39199,11.9\x22\x7D,\x7B\x22name\x22\x3A\x22Wukong\x22,\x22champion_id\x22\x3A\x2262\x22,\x22url\x22\x3A\x22\x5C\x2Fchampions\x5C\x2Fmonkeyking\x22,\x22values1\x22\x3A\x2252.46,7.72\x22,\x22values2\x22\x3A\x2252.46,25414,7.72\x22\x7D,\x7B\x22name\x22\x3A\x22Blitzcrank\x22,\x22champion_id\x22\x3A\x2253\x22,\x22url\x22\x3A\x22\x5C\x2Fchampions\x5C\x2Fblitzcrank\x22,\x22values1\x22\x3A\x2252.38,12.89\x22,\x22values2\x22\x3A\x2252.38,42453,12.89\x22,\x22last\x22\x3Atrue\x7D\x5D\x7D');
+                    });
+    </script>
+
+    <div class="right-column-back">
+	<div class="right-column">
+	    <!-- START: 300x250 -->
+<div class="medrec-bg">
+	<div id="za-medrec">
+		<script>
+		    if (typeof MonkeyBroker != "undefined") {
+		        MonkeyBroker.fillSlot("vertical-atf");
+		    }
+		</script>
+	</div>
+</div>
+<!-- END: 300x250 -->
+
+<!-- START: SIDE PANEL FEATURE -->
+
+<!-- END: SIDE PANEL FEATURE -->
+
+
+	    <!-- 10/07/2016 20:48:59 -->
+    <div class="sidebar-latest-news panel">
+        <h3 class="panel-title small">Latest News</h3>
+        <div class="panel-body">
+                                            <a href="https://youtube.com/watch?v=4xoO50y0L0E" class="latest-news-video" target="_blank">
+                    <img src="https://i.ytimg.com/vi/4xoO50y0L0E/mqdefault.jpg" width="276" height="155">
+                    <span class="news-video-youtube"></span>
+                    <span class="news-video-play"></span>
+                    <span>Worlds 2016: Introducing the Wildcards - INTZ and Albux Nox Luna</span>
+                </a>
+                                        <a href="/news/worlds-2016-recap-group-stage-day-5" class="latest-news-link">
+                    <em>10/07/2016</em>
+                    <span>Worlds 2016 Recap: Group Stage Day 5 - $20 RP Giveaway</span>
+                </a>
+                            <a href="/news/four-things-we-learned-about-after-the-first-week-of-worlds" class="latest-news-link">
+                    <em>10/06/2016</em>
+                    <span>Four Things We Learned About After The First Week Of Worlds</span>
+                </a>
+                            <a href="/news/the-return-of-solo-duo-queue" class="latest-news-link">
+                    <em>10/05/2016</em>
+                    <span>The Return of Solo/Duo Queue</span>
+                </a>
+                    </div>
+                                <script>
+                $(function(){
+                    $('.latest-news-video').click(function(e) {
+                        $.tmodal({content: $('<div style="padding: 5px;"><iframe width="640" height="360" src="http://www.youtube.com/embed/4xoO50y0L0E?autoplay=1" frameborder="0" allowfullscreen></iframe></div>'), showCloseBtn: true, closeOnMaskClick: true, closeAction: 'destroy'});
+                        e.preventDefault();
+                    });
+                });
+            </script>
+            </div>
+
+
+	    <!-- 10/07/2016 20:50:38 -->
+    <div class="sidebar-featured-guides panel">
+        <h3 class="panel-title small">Featured Guides</h3>
+        <div class="panel-body">
+            <div class="featured-guides-list">
+                                    <a href="/guides/276787" class="featured-guides-link">
+                        <span class="featured-guides-icon" style="background-image:url('/images/v2/champions/icons/size64x64/29.png');"></span>
+                        <span class="featured-guides-name">
+                            <strong>Twitch</strong>
+                            <span>Twitchhy</span>
+                        </span>
+                        <span class="featured-guides-stats">
+                            <span class="stats-stat">
+                                <em><span class="fa fa-thumbs-up"></span></em>
+                                <strong>452</strong>
+                            </span>
+                            <span class="stats-stat">
+                                <em><span class="fa fa-eye"></span></em>
+                                <strong>4.38M</strong>
+                            </span>
+                        </span>
+                    </a>
+                                    <a href="/guides/192218" class="featured-guides-link">
+                        <span class="featured-guides-icon" style="background-image:url('/images/v2/champions/icons/size64x64/254.png');"></span>
+                        <span class="featured-guides-name">
+                            <strong>Vi</strong>
+                            <span>Jubelbussen</span>
+                        </span>
+                        <span class="featured-guides-stats">
+                            <span class="stats-stat">
+                                <em><span class="fa fa-thumbs-up"></span></em>
+                                <strong>752</strong>
+                            </span>
+                            <span class="stats-stat">
+                                <em><span class="fa fa-eye"></span></em>
+                                <strong>6.24M</strong>
+                            </span>
+                        </span>
+                    </a>
+                                    <a href="/guides/221017" class="featured-guides-link">
+                        <span class="featured-guides-icon" style="background-image:url('/images/v2/champions/icons/size64x64/157.png');"></span>
+                        <span class="featured-guides-name">
+                            <strong>Yasuo</strong>
+                            <span>DJ Chrispy</span>
+                        </span>
+                        <span class="featured-guides-stats">
+                            <span class="stats-stat">
+                                <em><span class="fa fa-thumbs-up"></span></em>
+                                <strong>653</strong>
+                            </span>
+                            <span class="stats-stat">
+                                <em><span class="fa fa-eye"></span></em>
+                                <strong>9.26M</strong>
+                            </span>
+                        </span>
+                    </a>
+                                    <a href="/guides/166192" class="featured-guides-link">
+                        <span class="featured-guides-icon" style="background-image:url('/images/v2/champions/icons/size64x64/238.png');"></span>
+                        <span class="featured-guides-name">
+                            <strong>Zed</strong>
+                            <span>Hexadecimal</span>
+                        </span>
+                        <span class="featured-guides-stats">
+                            <span class="stats-stat">
+                                <em><span class="fa fa-thumbs-up"></span></em>
+                                <strong>763</strong>
+                            </span>
+                            <span class="stats-stat">
+                                <em><span class="fa fa-eye"></span></em>
+                                <strong>8.77M</strong>
+                            </span>
+                        </span>
+                    </a>
+                                    <a href="/guides/114683" class="featured-guides-link">
+                        <span class="featured-guides-icon" style="background-image:url('/images/v2/champions/icons/size64x64/54.png');"></span>
+                        <span class="featured-guides-name">
+                            <strong>Malphite</strong>
+                            <span>buurbs</span>
+                        </span>
+                        <span class="featured-guides-stats">
+                            <span class="stats-stat">
+                                <em><span class="fa fa-thumbs-up"></span></em>
+                                <strong>365</strong>
+                            </span>
+                            <span class="stats-stat">
+                                <em><span class="fa fa-eye"></span></em>
+                                <strong>7.03M</strong>
+                            </span>
+                        </span>
+                    </a>
+                            </div>
+            <a href="/guides" class="featured-guides-more">View More Guides</a>
+        </div>
+    </div>
+
+
+	    <!-- 10/07/2016 20:48:59 -->
+    <div class="sidebar-latest-skins panel">
+        <h3 class="panel-title small">Latest Skins</h3>
+        <div class="panel-body">
+            <a href="http://www.lolking.net/news/new-skins-preview-taliyah-super-galaxy-kindred-shyvana-fizz" class="latest-skins-link">
+                <span class="latest-skins-image">
+                    <img src="//lkimg.zamimg.com/images/featured_skins/f31f7cf7ff3b0281b582ac1da475a51bb276aa40.jpg">
+                    <img src="//lkimg.zamimg.com/images/featured_skins/6c618cf1c89f156d7eb79dd9f785d9d08ce2d98a.jpg">
+                    <img src="//lkimg.zamimg.com/images/featured_skins/bf8424967a4936cecc8b39d65d13721558f30a7e.jpg">
+                </span>
+                <span class="latest-skins-text">Patch 6.10 Skins</span>
+            </a>
+        </div>
+    </div>
+
+
+	    
+<div class="sidebar-sales panel">
+    <h3 class="panel-title small">Champion &amp; Skin Sales</h3>
+    <div class="panel-body">
+        <div class="sales-header sales-header-selected"><strong>Skins</strong></div>
+        <div class="sales-list">
+                </div>
+        <div class="sales-header"><strong>Champions</strong></div>
+        <div class="sales-list sales-list-champions" style="display:none">
+                </div>
+    </div>
+</div>
+
+<script>
+    $(".sales-header").click(function() {
+        if (!$(this).hasClass("sales-header-selected")) {
+            $(".sales-header").toggleClass("sales-header-selected");
+            $(".sales-list").slideToggle();
+        }
+    });
+</script>
+
+
+	    <!-- START: 300x250 -->
+<div class="medrec-bg">
+	<div id="za-medrec">
+		<script>
+		    if (typeof MonkeyBroker != "undefined") {
+		        MonkeyBroker.fillSlot("vertical-btf");
+		    }
+		</script>
+	</div>
+</div>
+<!-- END: 300x250 -->
+	</div>
+</div>
+
+            </div>
+        </div>
+        <script>
+            $(document).ready(function() {
+                if (typeof MonkeyBroker === "undefined") {
+                    $('body').addClass("has-adblocker")
+                }
+            });
+        </script>
+    </main>
+
+    <div id="feedback-form">
+    <div style="border-bottom: 1px solid #C0C0C0; margin-bottom: 8px;">
+        <h3 style="text-align: center;">Send Feedback</h3>
+    </div>
+    <form>
+        <table>
+            <tr><td>Name</td><td><input type="text" name="name" class="form-control" placeholder="Your name"></td></tr>
+            <tr><td>E-Mail</td><td><input type="text" name="email" class="form-control" placeholder="poppy@yordles.com"></td></tr>
+            <tr><td style="vertical-align: top">Feedback</td><td><textarea name="feedback" class="form-control" cols="30" rows="6"></textarea></td></tr>
+            <tr><td></td><td><button class="feedback-btn green">Submit</button> <button class="close-button feedback-btn grey">Cancel</button></td></tr>
+        </table>
+    </form>
+    <div style="max-width: 350px;">
+        <h5 id="message" style="text-align: center; font-family: 'Open Sans'"></h5>
+    </div>
+</div>
+    <div id="feedback-button">
+    <button class="feedback-btn grey">Feedback</button>
+</div>
+    <footer>
+    <div class="container">
+        <div class="row">
+            <div class="footer-links col-lg-9">
+                <ul>
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/contact">Contact &amp; FAQ</a></li>
+                    <li><a href="http://zam.com/terms.html">Terms of Service</a></li>
+                    <li><a href="http://zam.com/privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="footer-left col-lg-9">
+                <h3>Join the world's largest MMO gaming network.</h3>
+                <div class="footer-sites container-fluid">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="footer-subheading">Featured Sites</div>
+                            <ul>
+                                <li><a href="http://www.wowhead.com">Wowhead</a></li>
+                                <li><a href="http://www.tf2outpost.com">TF2 Outpost</a></li>
+                                <li><a href="http://www.dayzdb.com">DayZDB</a></li>
+                                <li><a href="http://www.hearthhead.com">Hearthhead</a></li>
+                                <li><a href="http://www.destinydb.com">DestinyDB</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="footer-subheading">Database Sites</div>
+                            <ul>
+                                <li><a href="http://www.wowhead.com">Wowhead</a></li>
+                                <li><a href="http://www.destinydb.com">DestinyDB</a></li>
+                                <li><a href="http://www.dayzdb.com">DayZDB</a></li>
+                                <li><a href="http://www.d3head.com">D3head</a></li>
+                                <li><a href="http://ffxi.allakhazam.com">Final Fantasy XI</a></li>
+                                <li><a href="http://everquest.allakhazam.com">Everquest</a></li>
+                                <li><a href="http://eq2.zam.com">Everquest II</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="footer-subheading">Addon Sites</div>
+                            <ul>
+                                <li><a href="http://www.mmoui.com">MMOUI</a></li>
+                                <li><a href="http://www.wowinterface.com">WowInterface</a></li>
+                                <li><a href="http://www.esoui.com/">ESOUI</a></li>
+                                <li><a href="http://www.riftui.com">RiftUI</a></li>
+                                <li><a href="http://www.swtorui.com">SWTORUI</a></li>
+                                <li><a href="http://www.eqinterface.com">EQInterface</a></li>
+                                <li><a href="http://www.eq2interface.com">EQ2Interface</a></li>
+                                <li><a href="http://www.lotrointerface.com">LOTROInterface</a></li>
+                                <li><a href="http://www.vginterface.com">VGInterface</a></li>
+                                <li><a href="http://www.cwmods.com/">CWMods</a></li>
+                                <li><a href="http://www.secretui.com/">SecretUI</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="footer-subheading">Community Sites</div>
+                            <ul>
+                                <li><a href="http://www.zam.com/forum.html">ZAM Forums</a></li>
+                                <li><a href="http://www.wowhead.com/forums">Wowhead Forums</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-right col-lg-3">
+                <a href="http://www.zam.com" class="footer-logo">
+                    <img src="//wow.zamimg.com/images/zam-logo.png" width="158" height="70">
+                </a>
+                <a href="http://www.zam.com" class="footer-button">Sign Up</a>
+                <ul class="footer-social">
+                    <li><a href="http://www.facebook.com/ZAMofficial"><span class="fa fa-facebook"></span></a></li>
+                    <li><a href="http://twitter.com/zamofficial"><span class="fa fa-twitter"></span></a></li>
+                    <li><a href="http://www.youtube.com/zamofficial"><span class="fa fa-youtube-play"></span></a></li>
+                    <li><a href="http://www.twitch.tv/zam"><span class="fa fa-twitch"></span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="/asset-manager-cache/js/db55fcc.js?1475782227"></script>
+
+<!--  Quantcast Tag -->
+<script>
+    qcdata = {} || qcdata;
+    (function(){
+        var elem = document.createElement('script');
+        elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://pixel") + ".quantserve.com/aquant.js?a=p-80xBzMhbKolFI";
+        elem.async = true;
+        elem.type = "text/javascript";
+        var scpt = document.getElementsByTagName('script')[0];
+        scpt.parentNode.insertBefore(elem,scpt);
+    }());
+
+
+    var qcdata = {qacct: 'p-80xBzMhbKolFI',
+        labels: ''
+    };
+</script>
+<noscript>
+    <img src="//pixel.quantserve.com/pixel/p-80xBzMhbKolFI.gif?labels=_fp.event.Default" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+</noscript>
+<!-- End Quantcast Tag -->
+
+<!-- Begin comScore Tag -->
+<script>
+var _comscore = _comscore || [];
+_comscore.push(
+{ c1: "2", c2: "6036197" }
+);
+(function()
+{ var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true; s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js"; el.parentNode.insertBefore(s, el); }
+)();
+</script>
+<noscript>
+<img src="//b.scorecardresearch.com/p?c1=2&c2=6036197&cv=2.0&cj=1" />
+</noscript>
+<!-- End comScore Tag -->
+
+        </body>
+</html>
